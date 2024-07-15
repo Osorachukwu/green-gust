@@ -61,7 +61,7 @@ export default function OurTeam() {
 
             <div className="bg-red-400 flex flex-col justify-center">
               {item.socials.map((social, j) => (
-                <div className="border-2 border-black p-3 rounded-full">
+                <div key={j} className="border-2 border-black p-3 rounded-full">
                   <Link key={j} href={social.linkUrl}>
                     <social.icon />
                   </Link>
