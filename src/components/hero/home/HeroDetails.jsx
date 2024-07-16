@@ -41,7 +41,7 @@ export default function HeroDetails() {
       {heroDetails.map((item, i) => (
         <div key={i}>
           <div className="flex gap-3 items-center mb-3">
-            <div className="h-[45px] w-[45px] relative bg-pink-300 p-3 rounded-full">
+            <div className="h-[45px] w-[45px] relative bg-green-700 p-3 rounded-full">
               <Image src={item.image} alt={item.title} fill />
             </div>
             <p className="text-3xl font-bold">{item.digits}</p>

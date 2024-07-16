@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import fixedPanels from "@/assets/fixed-panels.jpg";
-import fixedPanelsTwo from '@/assets/fixedPanelsTwo.jpg';
-import fixingPanelsTwo from '@/assets/workersTurbins.jpg';
-import fixingPanelsThree from '@/assets/fixingPanelsThree.jpg';
+import fixedPanelsTwo from "@/assets/fixedPanelsTwo.jpg";
+import fixingPanelsTwo from "@/assets/workersTurbins.jpg";
+import fixingPanelsThree from "@/assets/fixingPanelsThree.jpg";
 import chimneies from "@/assets/chimnies.jpg";
 import chimneiesSmall from "@/assets/chimniesSmall.jpg";
-import iceyTurbin from '@/assets/icey-desert-turbins.jpg';
+import iceyTurbin from "@/assets/icey-desert-turbins.jpg";
 import bulb from "@/assets/idea-bulb.png";
 import {
   ArrowRight,
@@ -60,7 +60,7 @@ export default function Service() {
       title: "Hydropower Plants",
       desc: "Cost of large scale solar system projects has fallen cheaper.",
       linkUrl: "",
-    }
+    },
   ];
 
   let whyChooseUs = [
@@ -71,67 +71,72 @@ export default function Service() {
   ];
 
   return (
-    <div className="px-4 mx-auto">
-       <div className="text-center text-lg font-semibold pb-16">
-        <p>Our projects</p>
-        <p className="text-3xl">
-        We Are Pioneers In The World Of <br /> Renewable Energy
-        </p>
-      </div>
-
-      {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 md:gap-20 w-full">
-        {serviceItems.map((item, i) => (
-          <div key={i} className="rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src={item.image}
-              alt="fixed solar panels"
-              className="mb-10"
-            />
-            {/* <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center -mt-20 ml-4 z-20">
-              <Image src={item.icon} alt="idea-bulb" height={40} width={40} className="z-20"/>
-            </div> */}
-            <div className="space-y-3 px-10 pb-6">
-              <p className="text-xl font-semibold">{item.title}</p>
-              <p>{item.desc}</p>
-              <Link href="" className="flex">
-                Read more <ArrowRight />
-              </Link>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Why Choose Us */}
-      <div className="flex px-4 mx-auto">
-        <div className="text-start lg:text-lg md:w-[50%] md:px-16 bg-slate-200 md:py-10">
-          <p>Why Choose Us</p>
-          <p className="text-xl py-2 font-medium lg:text-3xl">
-            Complete Commercial & Residential Solar Systems
+    <div className="bg-slate-200">
+      <div className="px-4 mx-auto mb-16">
+        <div className="text-center text-lg font-semibold pb-16">
+          <p>Our projects</p>
+          <p className="text-3xl">
+            We Are Pioneers In The World Of <br /> Renewable Energy
           </p>
-          <p className="pt-5 pb-3">
-            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-            lorem sit clita duo justo erat amet
-          </p>
-
-          <div className="grid gap-5 grid-cols-2">
-            {whyChooseUs.map((item, i) => (
-              <div key={i} className="flex items-center gap-5">
-                <div className="bg-green-300 h-10 w-10 rounded-full flex justify-center items-center">
-                 {item.image}
-                </div>
-                <div>
-                  <p>{item.title}</p>
-                  <p>{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
-        <div className="w-[50%] bg-red-400">
-          <Image src={chimneies} alt="panels" className="w-full h-full" />
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 md:gap-20 w-full">
+          {serviceItems.map((item, i) => (
+            <div key={i} className="rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src={item.image}
+                alt="fixed solar panels"
+                className="mb-10"
+              />
+              {/* <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center -mt-20 ml-4 z-20">
+              <Image src={item.icon} alt="idea-bulb" height={40} width={40} className="z-20"/>
+            </div> */}
+              <div className="space-y-3 px-10 pb-6">
+                <p className="text-xl font-semibold">{item.title}</p>
+                <p>{item.desc}</p>
+                <Link
+                  href={item.linkUrl}
+                  className="flex gap-1 items-center text-green-700"
+                >
+                  Read more <ArrowRight size={20} />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Why Choose Us */}
+        <div className="flex flex-col md:flex-row mx-auto pt-10">
+          <div className="text-start lg:text-lg md:w-[50%] md:px-16  md:py-10">
+            <p>Why Choose Uss</p>
+            <p className="text-xl py-2 font-medium lg:text-3xl">
+              Complete Commercial & Residential Solar Systems
+            </p>
+            <p className="pt-5 pb-3">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo erat amet
+            </p>
+
+            <div className="grid gap-5 grid-cols-2">
+              {whyChooseUs.map((item, i) => (
+                <div key={i} className="flex items-center gap-5">
+                  <div className="bg-green-300 h-10 w-10 rounded-full flex justify-center items-center">
+                    {item.image}
+                  </div>
+                  <div>
+                    <p>{item.title}</p>
+                    <p>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="md:w-[50%] bg-red-400">
+            <Image src={chimneies} alt="panels" className="w-full h-full" />
+          </div>
         </div>
       </div>
     </div>

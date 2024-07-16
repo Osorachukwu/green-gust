@@ -7,7 +7,7 @@ import Hambourger from "./Hambourger";
 
 export default function NavBar() {
   return (
-    <section className="w-full mx-auto flex gap-16 justify-between items-center h-16 bg-white shadow-2xl z-50">
+    <section className="relative w-full mx-auto flex gap-16 justify-between items-center h-16 bg-white shadow-2xl z-50">
       <div className="h-full px-5 md:px-10 flex items-center">
         <Link
           href="/"

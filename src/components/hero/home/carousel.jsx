@@ -16,7 +16,7 @@ export default function HeroCarousel() {
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
   return (
-    <div className="w-full">
+    <div className="w-full -z-50">
       <Carousel
         plugins={[plugin.current]}
         className=""
