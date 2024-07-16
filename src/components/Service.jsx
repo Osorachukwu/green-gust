@@ -2,8 +2,20 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import fixedPanels from "@/assets/fixed-panels.jpg";
+import fixedPanelsTwo from '@/assets/fixedPanelsTwo.jpg';
+import fixingPanelsTwo from '@/assets/workersTurbins.jpg';
+import fixingPanelsThree from '@/assets/fixingPanelsThree.jpg';
+import chimneies from "@/assets/chimnies.jpg";
+import chimneiesSmall from "@/assets/chimniesSmall.jpg";
+import iceyTurbin from '@/assets/icey-desert-turbins.jpg';
 import bulb from "@/assets/idea-bulb.png";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  DraftingCompass,
+  Check,
+  Headset,
+  UserRoundCheck,
+} from "lucide-react";
 
 export default function Service() {
   let serviceItems = [
@@ -11,65 +23,64 @@ export default function Service() {
       image: fixedPanels,
       icon: bulb,
       title: "Solar panels",
-      desc: " Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+      desc: "We offer everything from specific services on an individual technician level, to complete service teams with project management and full-scope solutions.",
       linkUrl: "",
     },
     {
-      image: fixedPanels,
+      image: iceyTurbin,
       icon: bulb,
-      title: "Solar panels",
-      desc: " Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+      title: "Wind Turbines",
+      desc: "Our wide-ranging expertise covers all major wind turbine models and includes both retrofit work as well as scheduled service and maintenance.",
       linkUrl: "",
     },
     {
-      image: fixedPanels,
+      image: fixedPanelsTwo,
       icon: bulb,
-      title: "Solar panels",
-      desc: " Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+      title: "Hydropower Plants",
+      desc: "We are able to deploy an expert close visual inspection of the blade to correctly classify levels of damage, using rope access techniques as the quickest method to save on lost production.",
       linkUrl: "",
     },
     {
-      image: fixedPanels,
+      image: fixingPanelsTwo,
       icon: bulb,
       title: "Solar panels",
-      desc: " Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+      desc: "The costs for renewable technologies will continue to fall significantly year on year, says the International Renewable Energy Agency (IRENA) in its latest report. .",
       linkUrl: "",
     },
     {
-      image: fixedPanels,
+      image: fixingPanelsThree,
       icon: bulb,
-      title: "Solar panels",
-      desc: " Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+      title: "Wind Turbines",
+      desc: "In the last decade, the cost of large scale solar system projects has fallen as much as 85%, and cost of solar PV electricity has fallen 7% year-on-year.",
       linkUrl: "",
     },
     {
-      image: fixedPanels,
+      image: chimneiesSmall,
       icon: bulb,
-      title: "Solar panels",
-      desc: " Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+      title: "Hydropower Plants",
+      desc: "Cost of large scale solar system projects has fallen cheaper.",
       linkUrl: "",
-    },
+    }
   ];
 
   let whyChooseUs = [
-    { image: bulb, title: "Quality", desc: "Services" },
-    { image: bulb, title: "Quality", desc: "Services" },
-    { image: bulb, title: "Quality", desc: "Services" },
-    { image: bulb, title: "Quality", desc: "Services" },
+    { image: <Check />, title: "Quality", desc: "Services" },
+    { image: <UserRoundCheck />, title: "Quality", desc: "Services" },
+    { image: <DraftingCompass />, title: "Quality", desc: "Services" },
+    { image: <Headset />, title: "Quality", desc: "Services" },
   ];
 
   return (
-    <div>
-     <div className="text-center text-lg font-semibold pb-16">
+    <div className="px-4 mx-auto">
+       <div className="text-center text-lg font-semibold pb-16">
         <p>Our projects</p>
         <p className="text-3xl">
         We Are Pioneers In The World Of <br /> Renewable Energy
         </p>
       </div>
 
-
       {/* Cards */}
-      <div className="grid grid-cols-3 gap-20 bg-white">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 md:gap-20 w-full">
         {serviceItems.map((item, i) => (
           <div key={i} className="rounded-lg overflow-hidden shadow-lg">
             <Image
@@ -80,8 +91,8 @@ export default function Service() {
             {/* <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center -mt-20 ml-4 z-20">
               <Image src={item.icon} alt="idea-bulb" height={40} width={40} className="z-20"/>
             </div> */}
-            <div className="space-y-3">
-              <p className="text-2xl font-semibold">{item.title}</p>
+            <div className="space-y-3 px-10 pb-6">
+              <p className="text-xl font-semibold">{item.title}</p>
               <p>{item.desc}</p>
               <Link href="" className="flex">
                 Read more <ArrowRight />
@@ -92,13 +103,13 @@ export default function Service() {
       </div>
 
       {/* Why Choose Us */}
-      <div className="flex">
-        <div className="text-start text-lg font-semibold w-[50%] pl-10">
+      <div className="flex px-4 mx-auto">
+        <div className="text-start lg:text-lg md:w-[50%] md:px-16 bg-slate-200 md:py-10">
           <p>Why Choose Us</p>
-          <p className="text-3xl">
+          <p className="text-xl py-2 font-medium lg:text-3xl">
             Complete Commercial & Residential Solar Systems
           </p>
-          <p>
+          <p className="pt-5 pb-3">
             Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
             diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
             lorem sit clita duo justo erat amet
@@ -108,12 +119,7 @@ export default function Service() {
             {whyChooseUs.map((item, i) => (
               <div key={i} className="flex items-center gap-5">
                 <div className="bg-green-300 h-10 w-10 rounded-full flex justify-center items-center">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    height={30}
-                    width={30}
-                  />
+                 {item.image}
                 </div>
                 <div>
                   <p>{item.title}</p>
@@ -125,7 +131,7 @@ export default function Service() {
         </div>
 
         <div className="w-[50%] bg-red-400">
-          <Image src={fixedPanels} alt="panels" className="w-full" />
+          <Image src={chimneies} alt="panels" className="w-full h-full" />
         </div>
       </div>
     </div>

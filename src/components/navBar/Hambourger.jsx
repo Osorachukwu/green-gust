@@ -23,11 +23,11 @@ export default function Hambourger() {
   }, [toggle]);
 
   return (
-    <div className="md:hidden" onClick={handleToggle}>
+    <div className="px-5 md:hidden" onClick={handleToggle}>
       <div>{toggle ? <X /> : <Menu />}</div>
       {toggle ? (
         <div
-          className="flex flex-col gap-5 p-5 absolute left-0 top-14 w-[100%] font-semibold"
+          className="flex flex-col gap-5 p-5 absolute left-0 top-14 w-[100%] font-semibold bg-slate-400"
           onClick={(event) => event.stopPropagation()}
         >
           <Link href="/">Home</Link>

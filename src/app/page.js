@@ -1,4 +1,5 @@
 import AboutUs from "@/components/AboutUs";
+import HeroCarousel from "@/components/hero/home/carousel";
 import HeroDetails from "@/components/hero/home/HeroDetails";
 import Hero from "@/components/hero/others/Hero";
 import OurProjects from "@/components/OurProjects";
@@ -8,8 +9,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="flex flex-col gap-20">
-      <Hero />
+    <section>
+      {/* <Hero /> */}
+      <HeroCarousel />
       <HeroDetails />
       <AboutUs />
       <Service />

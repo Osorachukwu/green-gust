@@ -47,7 +47,7 @@ export default function OurTeam() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {teamMembers.map((item, i) => (
-          <div key={i} className="flex justify-center bg-gray-600">
+          <div key={i} className="flex justify-center gap-3 bg-white shadow-xl">
             <div>
               <Image
                 src={item.image}
@@ -55,11 +55,14 @@ export default function OurTeam() {
                 height={340}
                 className="rounded-tr-[3rem]"
               />
-              <p>{item.title}</p>
-              <p>{item.decs}</p>
+              <div className="py-3">
+                <p className="font-semibold">{item.title}</p>
+                <p>{item.decs}</p>
+              </div>
             </div>
 
-            <div className="bg-red-400 flex flex-col justify-center">
+            {/* Socials */}
+            <div className="flex flex-col gap-3 justify-center">
               {item.socials.map((social, j) => (
                 <div key={j} className="border-2 border-black p-3 rounded-full">
                   <Link key={j} href={social.linkUrl}>

@@ -32,7 +32,7 @@ export default function NavLinks() {
             <ChevronDown />
           </Link>
           {dropDownOne ? (
-            <div className="hidden md:block">
+            <div>
               <div className="w-40 text-sm absolute top-[4.5rem] left-0 bg-white z-50 text-start flex flex-col rounded-xl overflow-hidden shadow-2xl">
                 <Link href="/windfarms" className="py-1 px-3 hover:font-bold">
                   Feature
