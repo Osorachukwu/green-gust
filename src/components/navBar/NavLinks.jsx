@@ -16,7 +16,7 @@ export default function NavLinks() {
   ];
 
   return (
-    <div className="h-full hidden md:block z-50 absolute">
+    <div className="h-full hidden md:block">
       <div className="flex items-center gap-4 text-lg h-full">
         {links.map((link, i) => (
           <Link key={i} href={link.path}>{link.title}</Link>

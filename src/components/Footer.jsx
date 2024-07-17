@@ -38,7 +38,7 @@ export default function Footer() {
   ];
   return (
     <div>
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-4 container px-4 mx-auto font-medium">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-4 container px-4 mx-auto font-medium pt-20 pb-6">
         {/* Address */}
         <div>
           <p className="text-xl font-semibold mb-4">Address Green Gust</p>
