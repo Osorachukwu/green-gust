@@ -72,7 +72,7 @@ export default function Service() {
 
   return (
     <div className="mx-auto mb-16">
-      <div className="px-20 pb-32">
+      <div className="px-4 md:px-20 pb-32">
         <div className="text-center text-lg font-semibold pb-16">
           <p className="text-purple-800 font-semibold">Our Services</p>
           <p className="text-xl py-2 font-bold lg:text-3xl">
@@ -108,8 +108,8 @@ export default function Service() {
       </div>
 
       {/* Why Choose Us */}
-      <div className="flex flex-col md:flex-row mx-auto bg-slate-100">
-        <div className="text-start lg:text-lg md:w-[50%] md:px-16  md:py-10">
+      <div className="flex flex-col md:flex-row mx-auto px-4">
+        <div className="text-start lg:text-lg md:w-[50%] md:px-16 bg-slate-100 p-3 md:py-10">
           <p className="text-purple-800 font-semibold">Why Choose Us</p>
           <p className="text-xl py-2 font-bold lg:text-3xl">
             Complete Commercial <br /> & Residential Solar Systems
@@ -122,7 +122,7 @@ export default function Service() {
 
           <div className="grid gap-5 grid-cols-2">
             {whyChooseUs.map((item, i) => (
-              <div key={i} className="flex items-center gap-5">
+              <div key={i} className="flex items-center gap-2 md:gap-5">
                 <div className="border-purple-800 border-2 h-10 w-10 rounded-full flex justify-center items-center">
                   {item.image}
                 </div>

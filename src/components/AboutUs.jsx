@@ -12,7 +12,7 @@ export default function AboutUs() {
         <Image src={fixingPanels} alt="panels" className="w-full h-full" />
       </div>
 
-      <div className="text-start lg:text-lg md:w-[50%] md:px-16 md:py-10  bg-slate-100">
+      <div className="text-start lg:text-lg md:w-[50%] p-3 md:px-16 md:py-10  bg-slate-100">
         <p className="text-purple-800 font-semibold">About Us</p>
         <p className="text-xl py-2 font-bold lg:text-3xl">
           25+ Years Experience In Solar & Renewable Energy Industry
