@@ -36,20 +36,20 @@ export default function OurProjects() {
     },
   ];
   return (
-    <div className="container px-4 mx-auto">
+    <div className="container px-4 mx-auto mb-36">
       <div className="text-center text-lg font-semibold pb-16">
-        <p>Our projects</p>
-        <p className="text-3xl">
+        <p className="text-purple-800 font-semibold">Our projects</p>
+        <p className="text-xl py-2 font-bold lg:text-3xl">
         Visit Our Latest Solar And <br /> Renewable Energy Projects
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {ourProjects.map((item, i) => (
           <div key={i} className="rounded-lg overflow-hidden">
             <Image src={item.image} alt={item.title} />
             <div className="flex">
-              <p className="border-b-2 my-4 py-2">{item.title}</p>
+              <p className="border-b-[1px] border-purple-500 my-2 text-purple-800 py-2">{item.title}</p>
             </div>
             <p className="text-xl font-bold">{item.desc}</p>
           </div>

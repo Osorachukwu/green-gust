@@ -39,10 +39,10 @@ export default function OurTeam() {
   ];
 
   return (
-    <div>
-      <div className="text-center text-lg font-semibold">
-        <p>Team Members</p>
-        <p className="text-3xl">Experienced Team Members</p>
+    <div className="pb-10">
+      <div className="text-center text-lg font-semibold py-10">
+        <p  className="text-purple-800 font-semibold">Team Members</p>
+        <p className="text-xl py-2 font-bold lg:text-3xl">Experienced Team Members</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -64,7 +64,7 @@ export default function OurTeam() {
             {/* Socials */}
             <div className="flex flex-col gap-3 justify-center">
               {item.socials.map((social, j) => (
-                <div key={j} className="border-2 border-black p-3 rounded-full">
+                <div key={j} className="border-2 border-purple-500 p-3 rounded-full">
                   <Link key={j} href={social.linkUrl}>
                     <social.icon />
                   </Link>

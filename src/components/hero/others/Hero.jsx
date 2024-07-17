@@ -1,33 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import styles from './hero.module.css'
 import heroBanner from "@/assets/carousel-1.jpg";
 
 export default function Hero({ title }) {
   return (
-    <div>
-      <div className="relative h-[105vh] w-full bg-purple-500">
-        <Image src={heroBanner} alt="" fill />
-        <div className="absolute left-32 top-[25rem] space-y-3 text-white">
-          <p className="text-6xl font-bold leading-[60px] ">
-            Poineers Of Wind And <br /> Renewable Energy
-          </p>
-          <p className="text-lg font-semibold">
-            We explore ways to deepen our contribution to the enviroment and
-            social <br /> well-being of our communities while delivering long
-            term economic values to our stakeholders
-          </p>
-
-          <div className="pt-5">
-            <Link
-              href="/about"
-              className="bg-green-500 py-5 px-10 rounded-full"
-            >
-              Read More
-            </Link>
-          </div>
-        </div>
-      </div>
+    <div className={`${styles.parent} h-[50vh] relative mb-20`}>
+      <p className="text-5xl text-white font-bold absolute top-32 left-40">{title}</p>
+      
     </div>
   );
 }

@@ -37,12 +37,12 @@ export default function Footer() {
     iceyTurbin,
   ];
   return (
-    <div>
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-4 container px-4 mx-auto font-medium pt-20 pb-6">
+    <div className="bg-slate-900 text-white mt-20">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-4 container px-4 mx-auto font-medium pt-20 pb-6 ">
         {/* Address */}
         <div>
           <p className="text-xl font-semibold mb-4">Address Green Gust</p>
-          <div className="space-y-2 pl-2 mb-4">
+          <div className="space-y-2 pl-2 mb-4 text-slate-500">
             <div className="flex gap-2">
               <MapPin size={20} />{" "}
               <span> 1234 Main Street, Anytown, CA 12345</span>
@@ -64,7 +64,7 @@ export default function Footer() {
               <Link
                 href={item.linkUrl}
                 key={i}
-                className="h-10 w-10 flex justify-center items-center gap-2 rounded-full border-2 border-black"
+                className="h-10 w-10 flex justify-center items-center gap-2 rounded-full border-2 border-slate-500 text-slate-500"
               >
                 {item.icon}
               </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
         {/* Quick Links */}
         <div>
           <p className="text-xl font-semibold mb-4">Quick Links</p>
-          <div className="space-y-2 pl-2">
+          <div className="space-y-2 pl-2 text-slate-500">
             {quickLinks.map((item, i) => (
               <div key={i} className="flex">
                 <ChevronRight />
@@ -100,7 +100,7 @@ export default function Footer() {
       </div>
 
       {/* Floor */}
-      <div className="mt-10 px-4 md:px-10">
+      <div className="mt-10 px-4 md:px-10 text-slate-500">
         <hr />
         <p className="text-center font-medium py-5 md:py-8 md:text-xl">
           &#169; Green-Gust Energy, ALL RIGHTS RESERVED.

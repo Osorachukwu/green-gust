@@ -71,11 +71,11 @@ export default function Service() {
   ];
 
   return (
-    <div className="bg-slate-200">
-      <div className="px-4 mx-auto mb-16">
+    <div className="mx-auto mb-16">
+      <div className="px-20 pb-32">
         <div className="text-center text-lg font-semibold pb-16">
-          <p>Our projects</p>
-          <p className="text-3xl">
+          <p className="text-purple-800 font-semibold">Our Services</p>
+          <p className="text-xl py-2 font-bold lg:text-3xl">
             We Are Pioneers In The World Of <br /> Renewable Energy
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function Service() {
                 <p>{item.desc}</p>
                 <Link
                   href={item.linkUrl}
-                  className="flex gap-1 items-center text-green-700"
+                  className="flex gap-1 items-center font-medium text-sm text-purple-800 hover:text-purple-500"
                 >
                   Read more <ArrowRight size={20} />
                 </Link>
@@ -105,38 +105,38 @@ export default function Service() {
             </div>
           ))}
         </div>
+      </div>
 
-        {/* Why Choose Us */}
-        <div className="flex flex-col md:flex-row mx-auto pt-10">
-          <div className="text-start lg:text-lg md:w-[50%] md:px-16  md:py-10">
-            <p>Why Choose Uss</p>
-            <p className="text-xl py-2 font-medium lg:text-3xl">
-              Complete Commercial & Residential Solar Systems
-            </p>
-            <p className="pt-5 pb-3">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-              lorem sit clita duo justo erat amet
-            </p>
+      {/* Why Choose Us */}
+      <div className="flex flex-col md:flex-row mx-auto bg-slate-100">
+        <div className="text-start lg:text-lg md:w-[50%] md:px-16  md:py-10">
+          <p className="text-purple-800 font-semibold">Why Choose Us</p>
+          <p className="text-xl py-2 font-bold lg:text-3xl">
+            Complete Commercial <br /> & Residential Solar Systems
+          </p>
+          <p className="pt-5 pb-3">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo erat amet
+          </p>
 
-            <div className="grid gap-5 grid-cols-2">
-              {whyChooseUs.map((item, i) => (
-                <div key={i} className="flex items-center gap-5">
-                  <div className="bg-green-300 h-10 w-10 rounded-full flex justify-center items-center">
-                    {item.image}
-                  </div>
-                  <div>
-                    <p>{item.title}</p>
-                    <p>{item.desc}</p>
-                  </div>
+          <div className="grid gap-5 grid-cols-2">
+            {whyChooseUs.map((item, i) => (
+              <div key={i} className="flex items-center gap-5">
+                <div className="border-purple-800 border-2 h-10 w-10 rounded-full flex justify-center items-center">
+                  {item.image}
                 </div>
-              ))}
-            </div>
+                <div>
+                  <p>{item.title}</p>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
+        </div>
 
-          <div className="md:w-[50%] bg-red-400">
-            <Image src={chimneies} alt="panels" className="w-full h-full" />
-          </div>
+        <div className="md:w-[50%]">
+          <Image src={chimneies} alt="panels" className="w-full h-full" />
         </div>
       </div>
     </div>

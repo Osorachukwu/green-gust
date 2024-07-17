@@ -1,0 +1,5 @@
+.parent {
+    background-image: url('../../../assets/carousel-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
