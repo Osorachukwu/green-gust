@@ -38,7 +38,7 @@ export default function OurProjects() {
   return (
     <div className="container px-4 mx-auto mb-36">
       <div className="text-center text-lg font-semibold pb-16">
-        <p className="text-purple-800 font-semibold">Our projects</p>
+        <p className="text-green-500 font-semibold">Our projects</p>
         <p className="text-xl py-2 font-bold lg:text-3xl">
         Visit Our Latest Solar And <br /> Renewable Energy Projects
         </p>
@@ -49,7 +49,7 @@ export default function OurProjects() {
           <div key={i} className="rounded-lg overflow-hidden">
             <Image src={item.image} alt={item.title} />
             <div className="flex">
-              <p className="border-b-[1px] border-purple-500 my-2 text-purple-800 py-2">{item.title}</p>
+              <p className="border-b-[1px] border-green-500 my-2 text-green-500 py-2">{item.title}</p>
             </div>
             <p className="text-xl font-bold">{item.desc}</p>
           </div>

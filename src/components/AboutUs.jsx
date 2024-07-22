@@ -13,7 +13,7 @@ export default function AboutUs() {
       </div>
 
       <div className="text-start lg:text-lg md:w-[50%] p-3 md:px-16 md:py-10  bg-slate-100">
-        <p className="text-purple-800 font-semibold">About Us</p>
+        <p className="text-green-500 font-semibold">About Us</p>
         <p className="text-xl py-2 font-bold lg:text-3xl">
           25+ Years Experience In Solar & Renewable Energy Industry
         </p>
@@ -26,21 +26,21 @@ export default function AboutUs() {
 
         <div className="">
           <div className="flex gap-2 text-base">
-            <CircleCheck size={25} className="text-purple-800" />
+            <CircleCheck size={25} className="text-green-500" />
             <p>
               Solar PV systems. To date, our portfolio consists of more than
               300MW of commercial
             </p>
           </div>
           <div className="flex gap-2 text-base">
-            <CircleCheck size={25} className="text-purple-800" />
+            <CircleCheck size={25} className="text-green-500" />
             <p>
               Inspecting and maintaining these assets is not easy, especially in
               the harsh North Sea conditions
             </p>
           </div>
           <div className="flex gap-2 text-base">
-            <CircleCheck size={25} className="text-purple-800" />
+            <CircleCheck size={25} className="text-green-500" />
             <p>
               Inspecting and maintaining these assets is not easy, especially in
               the harsh North Sea conditions
@@ -50,7 +50,7 @@ export default function AboutUs() {
 
         <div className="my-5">
           <Link href="/about">
-            <p className="bg-purple-800 hover:bg-purple-500 text-white rounded-full inline-block py-4 px-6">
+            <p className="bg-green-500 hover:bg-green-500 text-white rounded-full inline-block py-4 px-6">
               Explore More
             </p>
           </Link>

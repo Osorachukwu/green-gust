@@ -74,7 +74,7 @@ export default function Service() {
     <div className="mx-auto mb-16">
       <div className="px-4 md:px-20 pb-32">
         <div className="text-center text-lg font-semibold pb-16">
-          <p className="text-purple-800 font-semibold">Our Services</p>
+          <p className="text-green-500 font-semibold">Our Services</p>
           <p className="text-xl py-2 font-bold lg:text-3xl">
             We Are Pioneers In The World Of <br /> Renewable Energy
           </p>
@@ -83,21 +83,22 @@ export default function Service() {
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 md:gap-20 w-full">
           {serviceItems.map((item, i) => (
-            <div key={i} className="rounded-lg overflow-hidden shadow-lg">
+            <div key={i} className="rounded-lg overflow-hidden shadow-lg relative">
               <Image
                 src={item.image}
                 alt="fixed solar panels"
-                className="mb-10"
+                className="mb-10 -z-10"
               />
-              {/* <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center -mt-20 ml-4 z-20">
+              {/* Circle's */}
+              <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center absolute top-60 left-6 z-50">
               <Image src={item.icon} alt="idea-bulb" height={40} width={40} className="z-20"/>
-            </div> */}
+            </div>
               <div className="space-y-3 px-10 pb-6">
                 <p className="text-xl font-semibold">{item.title}</p>
                 <p>{item.desc}</p>
                 <Link
                   href={item.linkUrl}
-                  className="flex gap-1 items-center font-medium text-sm text-purple-800 hover:text-purple-500"
+                  className="flex gap-1 items-center font-medium text-sm text-green-500 hover:text-green-500"
                 >
                   Read more <ArrowRight size={20} />
                 </Link>
@@ -110,7 +111,7 @@ export default function Service() {
       {/* Why Choose Us */}
       <div className="flex flex-col md:flex-row mx-auto px-4">
         <div className="text-start lg:text-lg md:w-[50%] md:px-16 bg-slate-100 p-3 md:py-10">
-          <p className="text-purple-800 font-semibold">Why Choose Us</p>
+          <p className="text-green-500 font-semibold">Why Choose Us</p>
           <p className="text-xl py-2 font-bold lg:text-3xl">
             Complete Commercial <br /> & Residential Solar Systems
           </p>
@@ -123,7 +124,7 @@ export default function Service() {
           <div className="grid gap-5 grid-cols-2">
             {whyChooseUs.map((item, i) => (
               <div key={i} className="flex items-center gap-2 md:gap-5">
-                <div className="border-purple-800 border-2 h-10 w-10 rounded-full flex justify-center items-center">
+                <div className="border-green-500 border-2 h-10 w-10 rounded-full flex justify-center items-center">
                   {item.image}
                 </div>
                 <div>

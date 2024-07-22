@@ -11,9 +11,9 @@ export default function OurTeam() {
       title: "Andy Robben",
       decs: "Designer",
       socials: [
-        { icon: Facebook, linkUrl: "exampleUrl1" },
         { icon: Twitter, linkUrl: "exampleUrl2" },
-        { icon: Instagram, linkUrl: "exampleUrl3" },
+        // { icon: Facebook, linkUrl: "exampleUrl1" },
+        // { icon: Instagram, linkUrl: "exampleUrl3" },
       ],
     },
     {
@@ -21,9 +21,9 @@ export default function OurTeam() {
       title: "Peter Enonk",
       decs: "Energy",
       socials: [
-        { icon: Facebook, linkUrl: "exampleUrl1" },
         { icon: Twitter, linkUrl: "exampleUrl2" },
-        { icon: Instagram, linkUrl: "exampleUrl3" },
+        // { icon: Facebook, linkUrl: "exampleUrl1" },
+        // { icon: Instagram, linkUrl: "exampleUrl3" },
       ],
     },
     {
@@ -31,9 +31,9 @@ export default function OurTeam() {
       title: "Attin Willies",
       decs: "Engineer",
       socials: [
-        { icon: Facebook, linkUrl: "exampleUrl1" },
         { icon: Twitter, linkUrl: "exampleUrl2" },
-        { icon: Instagram, linkUrl: "exampleUrl3" },
+        // { icon: Facebook, linkUrl: "exampleUrl1" },
+        // { icon: Instagram, linkUrl: "exampleUrl3" },
       ],
     },
   ];
@@ -41,7 +41,7 @@ export default function OurTeam() {
   return (
     <div className="pb-10">
       <div className="text-center text-lg font-semibold py-10">
-        <p  className="text-purple-800 font-semibold">Team Members</p>
+        <p  className="text-green-500 font-semibold">Team Members</p>
         <p className="text-xl py-2 font-bold lg:text-3xl">Experienced Team Members</p>
       </div>
 
@@ -64,7 +64,7 @@ export default function OurTeam() {
             {/* Socials */}
             <div className="flex flex-col gap-3 justify-center">
               {item.socials.map((social, j) => (
-                <div key={j} className="border-2 border-purple-500 p-3 rounded-full">
+                <div key={j} className="border-2 border-green-500 p-3 rounded-full text-green-500">
                   <Link key={j} href={social.linkUrl}>
                     <social.icon />
                   </Link>

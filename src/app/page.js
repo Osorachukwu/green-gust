@@ -1,4 +1,5 @@
 import AboutUs from "@/components/AboutUs";
+import BackToTop from "@/components/BackToTop";
 import HeroCarousel from "@/components/hero/home/carousel";
 import HeroDetails from "@/components/hero/home/HeroDetails";
 import Hero from "@/components/hero/others/Hero";
@@ -9,7 +10,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section>
+    <section className="">
       {/* <Hero /> */}
       <HeroCarousel />
       <HeroDetails />
@@ -17,6 +18,7 @@ export default function Home() {
       <Service />
       <OurProjects />
       <OurTeam />
+      <BackToTop />
     </section>
   );
 }

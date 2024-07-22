@@ -26,7 +26,7 @@ export default function FeaturesPage() {
       {/* Why Choose Us */}
       <div className="flex flex-col md:flex-row mx-auto bg-slate-100">
         <div className="text-start lg:text-lg md:w-[50%] md:px-16  md:py-10">
-          <p className="text-purple-800 font-semibold">Why Choose Us</p>
+          <p className="text-green-500 font-semibold">Why Choose Us</p>
           <p className="text-xl py-2 font-bold lg:text-3xl">
             Complete Commercial <br /> & Residential Solar Systems
           </p>
@@ -39,7 +39,7 @@ export default function FeaturesPage() {
           <div className="grid gap-5 grid-cols-2">
             {whyChooseUs.map((item, i) => (
               <div key={i} className="flex items-center gap-5">
-                <div className="border-purple-800 border-2 h-10 w-10 rounded-full flex justify-center items-center">
+                <div className="border-green-500 border-2 h-10 w-10 rounded-full flex justify-center items-center">
                   {item.image}
                 </div>
                 <div>

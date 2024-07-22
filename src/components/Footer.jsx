@@ -23,9 +23,9 @@ export default function Footer() {
   ];
   let socialLinks = [
     { icon: <Twitter />, linkUrl: "ddd" },
-    { icon: <Facebook />, linkUrl: "ddd" },
-    { icon: <Youtube />, linkUrl: "ddd" },
-    { icon: <Linkedin />, linkUrl: "ddd" },
+    // { icon: <Facebook />, linkUrl: "ddd" },
+    // { icon: <Youtube />, linkUrl: "ddd" },
+    // { icon: <Linkedin />, linkUrl: "ddd" },
   ];
 
   let projectGallery = [
@@ -44,14 +44,28 @@ export default function Footer() {
           <p className="text-xl font-semibold mb-4">Address Green Gust</p>
           <div className="space-y-2 pl-2 mb-4 text-slate-500">
             <div className="flex gap-2">
-              <MapPin size={20} />{" "}
-              <span> 1234 Main Street, Anytown, CA 12345</span>
-            </div>
-            <div className="flex gap-2">
-              <Phone size={20} /> <span> 123-456- 7890</span>
+              <div>
+                <MapPin size={20} />
+              </div>
+              <span>
+                Berlin, Germany (HQ) Address: No. Brandenburgische Str. 75,
+                12713 Berlin, Germany
+              </span>
             </div>
             <div className="flex gap-2">
               <Mail size={20} /> <span> info@company.com</span>
+            </div>
+            <p className="text-xl font-semibold mb-4 text-white">
+              Address Ligenichubs
+            </p>
+            <div className="flex gap-2">
+              <div>
+                <MapPin size={20} />
+              </div>
+              <span>ADDRESS: Agerakvo 37, 860 Copenhagen, Denmark</span>
+            </div>
+            <div className="flex gap-2">
+              <Phone size={20} /> <span> 123-456- 7890</span>
             </div>
             <div className="flex gap-2">
               <Mail size={20} /> <span> info@company.com</span>
