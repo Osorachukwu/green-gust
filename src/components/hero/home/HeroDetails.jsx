@@ -61,7 +61,7 @@ export default function HeroDetails() {
           <div className="flex gap-3 items-center mb-3">
             <div
               className={`h-[45px] w-[45px] relative p-3 rounded-full border-2 ${
-                hoverStates[i] ? "border-green-500" : "border-green-500"
+                hoverStates[i] ? "bg-green-500" : "bg-green-500"
               }`}
             >
               <Image src={item.image} alt={item.title} fill />

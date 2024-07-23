@@ -9,6 +9,8 @@ import chimneies from "@/assets/chimnies.jpg";
 import chimneiesSmall from "@/assets/chimniesSmall.jpg";
 import iceyTurbin from "@/assets/icey-desert-turbins.jpg";
 import bulb from "@/assets/idea-bulb.png";
+import flowingWind from "@/assets/flowing-wind-icon.png"
+import panelIcon from "@/assets/panel-icon.png"
 import {
   ArrowRight,
   DraftingCompass,
@@ -28,21 +30,21 @@ export default function Service() {
     },
     {
       image: iceyTurbin,
-      icon: bulb,
+      icon: flowingWind,
       title: "Wind Turbines",
       desc: "Our wide-ranging expertise covers all major wind turbine models and includes both retrofit work as well as scheduled service and maintenance.",
       linkUrl: "",
     },
     {
       image: fixedPanelsTwo,
-      icon: bulb,
+      icon: panelIcon,
       title: "Hydropower Plants",
       desc: "We are able to deploy an expert close visual inspection of the blade to correctly classify levels of damage, using rope access techniques as the quickest method to save on lost production.",
       linkUrl: "",
     },
     {
       image: fixingPanelsTwo,
-      icon: bulb,
+      icon: flowingWind,
       title: "Solar panels",
       desc: "The costs for renewable technologies will continue to fall significantly year on year, says the International Renewable Energy Agency (IRENA) in its latest report. .",
       linkUrl: "",
@@ -56,7 +58,7 @@ export default function Service() {
     },
     {
       image: chimneiesSmall,
-      icon: bulb,
+      icon: panelIcon,
       title: "Hydropower Plants",
       desc: "Cost of large scale solar system projects has fallen cheaper.",
       linkUrl: "",
@@ -90,7 +92,7 @@ export default function Service() {
                 className="mb-10 -z-10"
               />
               {/* Circle's */}
-              <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center absolute top-60 left-6 z-50">
+              <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center absolute top-52 left-8 md:top-60 md:left-6 z-50">
               <Image src={item.icon} alt="idea-bulb" height={40} width={40} className="z-20"/>
             </div>
               <div className="space-y-3 px-10 pb-6">
@@ -124,7 +126,7 @@ export default function Service() {
           <div className="grid gap-5 grid-cols-2">
             {whyChooseUs.map((item, i) => (
               <div key={i} className="flex items-center gap-2 md:gap-5">
-                <div className="border-green-500 border-2 h-10 w-10 rounded-full flex justify-center items-center">
+                <div className="bg-green-500 border-2 h-10 w-10 rounded-full flex justify-center items-center">
                   {item.image}
                 </div>
                 <div>

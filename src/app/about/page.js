@@ -7,7 +7,7 @@ import React from "react";
 export default function AboutPage() {
   return (
     <div>
-      <Hero title="About Us"/>
+      <Hero title="About Us" currentPage="About"/>
       <HeroDetails />
       <AboutUs />
       <OurTeam />

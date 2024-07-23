@@ -6,7 +6,7 @@ import React from 'react'
 export default function ServicePage() {
   return (
     <div>
-        <Hero title="Service"/>
+        <Hero title="Service" currentPage="Service" />
         <Service />
         <OurProjects />
     </div>

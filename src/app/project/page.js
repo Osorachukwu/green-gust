@@ -6,7 +6,7 @@ import React from 'react'
 export default function ProjectPage() {
   return (
     <div>
-      <Hero title="Projects"/>
+      <Hero title="Projects" currentPage="Project" />
         <OurProjects />
         <FreeQuote />
     </div>

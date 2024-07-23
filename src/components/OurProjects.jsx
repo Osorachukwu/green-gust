@@ -1,31 +1,37 @@
 import React from "react";
 import Image from "next/image";
+import fixedPanels from "@/assets/fixed-panels.jpg";
+import fixedPanelsTwo from "@/assets/fixedPanelsTwo.jpg";
+import fixingPanelsTwo from "@/assets/workersTurbins.jpg";
+import fixingPanelsThree from "@/assets/fixingPanelsThree.jpg";
+import chimneies from "@/assets/chimnies.jpg";
+import chimneiesSmall from "@/assets/chimniesSmall.jpg";
 import tubins from "@/assets/icey-desert-turbins.jpg";
 
 export default function OurProjects() {
   let ourProjects = [
     {
-      image: tubins,
+      image: chimneiesSmall,
       title: "Solar panels",
       desc: "We Are pioneers of solar & renewable energy industry",
     },
     {
-      image: tubins,
+      image: fixedPanels,
       title: "Solar panels",
       desc: "We Are pioneers of solar & renewable energy industry",
     },
     {
-      image: tubins,
+      image: fixedPanelsTwo,
       title: "Solar panels",
       desc: "We Are pioneers of solar & renewable energy industry",
     },
     {
-      image: tubins,
+      image: fixingPanelsThree,
       title: "Solar panels",
       desc: "We Are pioneers of solar & renewable energy industry",
     },
     {
-      image: tubins,
+      image: fixingPanelsTwo,
       title: "Solar panels",
       desc: "We Are pioneers of solar & renewable energy industry",
     },

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import fixedPanels from "@/assets/fixed-panels.jpg";
-import { CircleCheck } from "lucide-react";
+import { Check } from "lucide-react";
 import fixingPanels from "@/assets/fixingPanels.jpg";
 
 export default function AboutUs() {
@@ -26,21 +26,27 @@ export default function AboutUs() {
 
         <div className="">
           <div className="flex gap-2 text-base">
-            <CircleCheck size={25} className="text-green-500" />
+            <div className="bg-green-500 h-7 min-w-7 rounded-full flex justify-center items-center">
+              <Check size={20} className="text-black" />
+            </div>
             <p>
               Solar PV systems. To date, our portfolio consists of more than
               300MW of commercial
             </p>
           </div>
           <div className="flex gap-2 text-base">
-            <CircleCheck size={25} className="text-green-500" />
+            <div className="bg-green-500 h-7 min-w-7 rounded-full flex justify-center items-center">
+              <Check size={20} className="text-black" />
+            </div>
             <p>
               Inspecting and maintaining these assets is not easy, especially in
               the harsh North Sea conditions
             </p>
           </div>
           <div className="flex gap-2 text-base">
-            <CircleCheck size={25} className="text-green-500" />
+            <div className="bg-green-500 h-7 min-w-7 rounded-full flex justify-center items-center">
+              <Check size={20} className="text-black" />
+            </div>
             <p>
               Inspecting and maintaining these assets is not easy, especially in
               the harsh North Sea conditions

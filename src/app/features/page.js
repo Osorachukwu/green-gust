@@ -20,7 +20,7 @@ export default function FeaturesPage() {
       ];
   return (
     <div>
-        <Hero title="Features"/>
+        <Hero title="Features" currentPage="Features" />
         <HeroDetails />
         
       {/* Why Choose Us */}

@@ -2,6 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import teamOne from "@/assets/team-1.jpg";
+import teamTwo from "@/assets/team-2.jpg";
+import teamThree from "@/assets/team-3.jpg";
+
 import { Facebook, Twitch, Instagram, Twitter } from "lucide-react";
 
 export default function OurTeam() {
@@ -17,7 +20,7 @@ export default function OurTeam() {
       ],
     },
     {
-      image: teamOne,
+      image: teamTwo,
       title: "Peter Enonk",
       decs: "Energy",
       socials: [
@@ -27,7 +30,7 @@ export default function OurTeam() {
       ],
     },
     {
-      image: teamOne,
+      image: teamThree,
       title: "Attin Willies",
       decs: "Engineer",
       socials: [

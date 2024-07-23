@@ -1,14 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from './hero.module.css'
+import styles from "./hero.module.css";
 import heroBanner from "@/assets/carousel-1.jpg";
 
-export default function Hero({ title }) {
+export default function Hero({ title, currentPage }) {
   return (
     <div className={`${styles.parent} h-[50vh] relative mb-20`}>
-      <p className="text-5xl text-white font-bold absolute top-32 left-40">{title}</p>
-      
+      <div className="text-white absolute top-32 left-40 space-y-6">
+        <p className="text-5xl font-bold">{title}</p>
+        <p className="text-lg">Home / Pages / {currentPage}</p>
+      </div>
     </div>
   );
 }
