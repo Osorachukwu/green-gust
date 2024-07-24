@@ -9,8 +9,8 @@ import chimneies from "@/assets/chimnies.jpg";
 import chimneiesSmall from "@/assets/chimniesSmall.jpg";
 import iceyTurbin from "@/assets/icey-desert-turbins.jpg";
 import bulb from "@/assets/bulb-flat-white.png";
-import flowingWind from "@/assets/white-flowing-wind-icon.png"
-import panelIcon from "@/assets/white-panel-icon.png"
+import flowingWind from "@/assets/white-flowing-wind-icon.png";
+import panelIcon from "@/assets/white-panel-icon.png";
 import {
   ArrowRight,
   DraftingCompass,
@@ -66,10 +66,18 @@ export default function Service() {
   ];
 
   let whyChooseUs = [
-    { image: <Check  stroke="white" />, title: "Quality", desc: "Services" },
-    { image: <UserRoundCheck  stroke="white" />, title: "Quality", desc: "Services" },
-    { image: <DraftingCompass  stroke="white" />, title: "Quality", desc: "Services" },
-    { image: <Headset  stroke="white" />, title: "Quality", desc: "Services" },
+    { image: <Check stroke="white" />, title: "Quality", desc: "Services" },
+    {
+      image: <UserRoundCheck stroke="white" />,
+      title: "Quality",
+      desc: "Services",
+    },
+    {
+      image: <DraftingCompass stroke="white" />,
+      title: "Quality",
+      desc: "Services",
+    },
+    { image: <Headset stroke="white" />, title: "Quality", desc: "Services" },
   ];
 
   return (
@@ -85,16 +93,26 @@ export default function Service() {
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 md:gap-20 w-full">
           {serviceItems.map((item, i) => (
-            <div key={i} className="rounded-lg overflow-hidden shadow-lg relative">
-              <Image
-                src={item.image}
-                alt="fixed solar panels"
-                className="mb-10 -z-10"
-              />
-              {/* Circle's */}
-              <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center absolute top-52 left-8 md:top-60 md:left-6 z-50">
-              <Image src={item.icon} alt="idea-bulb" height={40} width={40} className="z-20"/>
-            </div>
+            <div key={i} className="rounded-lg overflow-hidden shadow-lg">
+              <div className="mb-10 relative">
+                <Image
+                  src={item.image}
+                  alt="fixed solar panels"
+                  className="-z-10"
+                />
+
+                {/* Circle's */}
+                <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center z-50 absolute -bottom-6 left-5">
+                  <Image
+                    src={item.icon}
+                    alt="idea-bulb"
+                    height={40}
+                    width={40}
+                    className="z-20"
+                  />
+                </div>
+              </div>
+
               <div className="space-y-3 px-10 pb-6">
                 <p className="text-xl font-semibold">{item.title}</p>
                 <p>{item.desc}</p>

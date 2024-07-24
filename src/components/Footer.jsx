@@ -62,7 +62,7 @@ export default function Footer() {
               <Mail size={20} /> <span> info@company.com</span>
             </div>
             <p className="text-xl font-semibold mb-4 text-white">
-              Address Ligenichubs
+              Address
             </p>
             <div className="flex gap-2">
               <div>
