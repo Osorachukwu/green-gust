@@ -50,7 +50,7 @@ export default function NavLinks() {
                 <Link href="/quote" className="py-1 px-3">
                   Our Team
                 </Link>
-                <Link href="/players" className="py-1 px-3">
+                <Link href="/testimonial" className="py-1 px-3">
                   Testimonial
                 </Link>
               </div>

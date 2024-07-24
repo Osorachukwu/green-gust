@@ -6,6 +6,7 @@ import Hero from "@/components/hero/others/Hero";
 import OurProjects from "@/components/OurProjects";
 import OurTeam from "@/components/OurTeam";
 import Service from "@/components/Service";
+import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <OurProjects />
       <OurTeam />
       <BackToTop />
+      <Testimonial />
     </section>
   );
 }

@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from "react";
 import Image from "next/image";
-import happyCustomersIcon from '@/assets/happy-customers.png';
-import awardIcon from '@/assets/awards.png';
-import checkIconOne from '@/assets/checkIcon.svg';
-import expertWorkersIcon from '@/assets/expert-workers.png';
+import happyCustomersIcon from '@/assets/white-expert-workers.png';
+import awardIcon from '@/assets/white-awards.png';
+import checkIconOne from '@/assets/white-check.png';
+import expertWorkersIcon from '@/assets/white-happy-customers.png';
 
 export default function HeroDetails() {
   const [hoverStates, setHoverStates] = useState(
@@ -60,11 +60,11 @@ export default function HeroDetails() {
         >
           <div className="flex gap-3 items-center mb-3">
             <div
-              className={`h-[45px] w-[45px] relative p-3 rounded-full border-2 ${
+              className={`h-[45px] w-[45px] flex items-center justify-center p-2 rounded-full border-2 ${
                 hoverStates[i] ? "bg-green-500" : "bg-green-500"
               }`}
             >
-              <Image src={item.image} alt={item.title} fill />
+              <Image src={item.image} alt={item.title} width={40} height={40} />
             </div>
             <p className="text-3xl font-bold">{item.digits}</p>
           </div>

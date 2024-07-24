@@ -14,7 +14,7 @@ export default function OurTeam() {
       title: "Andy Robben",
       decs: "Designer",
       socials: [
-        { icon: Twitter, linkUrl: "exampleUrl2" },
+        { icon: <Twitter fill="rgb(34 197 94)" />, linkUrl: "exampleUrl2" },
         // { icon: Facebook, linkUrl: "exampleUrl1" },
         // { icon: Instagram, linkUrl: "exampleUrl3" },
       ],
@@ -24,7 +24,7 @@ export default function OurTeam() {
       title: "Peter Enonk",
       decs: "Energy",
       socials: [
-        { icon: Twitter, linkUrl: "exampleUrl2" },
+        { icon: <Twitter fill="rgb(34 197 94)" />, linkUrl: "exampleUrl2" },
         // { icon: Facebook, linkUrl: "exampleUrl1" },
         // { icon: Instagram, linkUrl: "exampleUrl3" },
       ],
@@ -34,7 +34,7 @@ export default function OurTeam() {
       title: "Attin Willies",
       decs: "Engineer",
       socials: [
-        { icon: Twitter, linkUrl: "exampleUrl2" },
+        { icon: <Twitter fill="rgb(34 197 94)" />, linkUrl: "exampleUrl2" },
         // { icon: Facebook, linkUrl: "exampleUrl1" },
         // { icon: Instagram, linkUrl: "exampleUrl3" },
       ],
@@ -67,11 +67,11 @@ export default function OurTeam() {
             {/* Socials */}
             <div className="flex flex-col gap-3 justify-center">
               {item.socials.map((social, j) => (
-                <div key={j} className="border-2 border-green-500 p-3 rounded-full text-green-500">
-                  <Link key={j} href={social.linkUrl}>
-                    <social.icon />
-                  </Link>
-                </div>
+                <Link key={j} href={social.linkUrl} className="border-2 border-green-500 p-3 rounded-full text-white">
+                  <div key={j} >
+                    {social.icon}
+                  </div>
+                </Link>
               ))}
             </div>
           </div>

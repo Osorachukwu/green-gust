@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import fixedPanels from "@/assets/fixed-panels.jpg";
+import fixedPanelsTwo from "@/assets/fixedPanelsTwo.jpg";
+import fixingPanelsTwo from "@/assets/workersTurbins.jpg";
+import fixingPanelsThree from "@/assets/fixingPanelsThree.jpg";
+import chimneiesSmall from "@/assets/chimniesSmall.jpg";
+import tubins from "@/assets/icey-desert-turbins.jpg";
 import {
   MapPin,
   Phone,
@@ -29,11 +35,11 @@ export default function Footer() {
   ];
 
   let projectGallery = [
-    iceyTurbin,
-    iceyTurbin,
-    iceyTurbin,
-    iceyTurbin,
-    iceyTurbin,
+    fixedPanels,
+    chimneiesSmall,
+    fixingPanelsThree,
+    fixingPanelsTwo,
+    fixedPanelsTwo,
     iceyTurbin,
   ];
   return (
@@ -65,7 +71,7 @@ export default function Footer() {
               <span>ADDRESS: Agerakvo 37, 860 Copenhagen, Denmark</span>
             </div>
             <div className="flex gap-2">
-              <Phone size={20} /> <span> 123-456- 7890</span>
+              <Phone size={20} /> <span> +4592457638 </span>
             </div>
             <div className="flex gap-2">
               <Mail size={20} /> <span> info@company.com</span>
@@ -116,7 +122,7 @@ export default function Footer() {
       {/* Floor */}
       <div className="mt-10 px-4 md:px-10 text-slate-500">
         <hr />
-        <p className="text-center font-medium py-5 md:py-8 md:text-xl">
+        <p className="font-medium py-5 md:py-8 md:text-xl">
           &#169; Green-Gust Energy, ALL RIGHTS RESERVED.
         </p>
       </div>

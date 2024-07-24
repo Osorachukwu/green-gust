@@ -27,7 +27,7 @@ export default function AboutUs() {
         <div className="">
           <div className="flex gap-2 text-base">
             <div className="bg-green-500 h-7 min-w-7 rounded-full flex justify-center items-center">
-              <Check size={20} className="text-black" />
+              <Check size={20} stroke="white" />
             </div>
             <p>
               Solar PV systems. To date, our portfolio consists of more than
@@ -36,7 +36,7 @@ export default function AboutUs() {
           </div>
           <div className="flex gap-2 text-base">
             <div className="bg-green-500 h-7 min-w-7 rounded-full flex justify-center items-center">
-              <Check size={20} className="text-black" />
+              <Check size={20} stroke="white" />
             </div>
             <p>
               Inspecting and maintaining these assets is not easy, especially in
@@ -45,7 +45,7 @@ export default function AboutUs() {
           </div>
           <div className="flex gap-2 text-base">
             <div className="bg-green-500 h-7 min-w-7 rounded-full flex justify-center items-center">
-              <Check size={20} className="text-black" />
+              <Check size={20} stroke="white" />
             </div>
             <p>
               Inspecting and maintaining these assets is not easy, especially in
@@ -56,7 +56,7 @@ export default function AboutUs() {
 
         <div className="my-5">
           <Link href="/about">
-            <p className="bg-green-500 hover:bg-green-500 text-white rounded-full inline-block py-4 px-6">
+            <p className="bg-green-500 hover:bg-green-400 text-white rounded-full inline-block py-4 px-6">
               Explore More
             </p>
           </Link>

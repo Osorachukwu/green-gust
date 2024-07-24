@@ -8,9 +8,9 @@ import fixingPanelsThree from "@/assets/fixingPanelsThree.jpg";
 import chimneies from "@/assets/chimnies.jpg";
 import chimneiesSmall from "@/assets/chimniesSmall.jpg";
 import iceyTurbin from "@/assets/icey-desert-turbins.jpg";
-import bulb from "@/assets/idea-bulb.png";
-import flowingWind from "@/assets/flowing-wind-icon.png"
-import panelIcon from "@/assets/panel-icon.png"
+import bulb from "@/assets/bulb-flat-white.png";
+import flowingWind from "@/assets/white-flowing-wind-icon.png"
+import panelIcon from "@/assets/white-panel-icon.png"
 import {
   ArrowRight,
   DraftingCompass,
@@ -66,10 +66,10 @@ export default function Service() {
   ];
 
   let whyChooseUs = [
-    { image: <Check />, title: "Quality", desc: "Services" },
-    { image: <UserRoundCheck />, title: "Quality", desc: "Services" },
-    { image: <DraftingCompass />, title: "Quality", desc: "Services" },
-    { image: <Headset />, title: "Quality", desc: "Services" },
+    { image: <Check  stroke="white" />, title: "Quality", desc: "Services" },
+    { image: <UserRoundCheck  stroke="white" />, title: "Quality", desc: "Services" },
+    { image: <DraftingCompass  stroke="white" />, title: "Quality", desc: "Services" },
+    { image: <Headset  stroke="white" />, title: "Quality", desc: "Services" },
   ];
 
   return (

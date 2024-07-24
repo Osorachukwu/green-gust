@@ -43,7 +43,7 @@ export default function HeroCarousel() {
                   </p>
                   <div className="mt-20">
                     <Link href="/about">
-                      <p className="bg-green-500 hover:bg-green-500 text-white rounded-full inline-block py-4 px-6">
+                      <p className="bg-green-500 hover:bg-green-400 text-white rounded-full inline-block py-4 px-6">
                         Read More
                       </p>
                     </Link>
@@ -69,7 +69,7 @@ export default function HeroCarousel() {
                   </p>
                   <div className="my-20">
                     <Link href="/about">
-                      <p className="bg-green-500 hover:bg-green-500 text-white rounded-full inline-block py-4 px-6">
+                      <p className="bg-green-500 hover:bg-green-400 text-white rounded-full inline-block py-4 px-6">
                         Read More
                       </p>
                     </Link>
@@ -96,7 +96,7 @@ export default function HeroCarousel() {
                   </p>
                   <div className="my-20">
                     <Link href="/about">
-                      <p className="bg-green-500 hover:bg-green-500 text-white rounded-full inline-block py-4 px-6">
+                      <p className="bg-green-500 hover:bg-green-400 text-white rounded-full inline-block py-4 px-6">
                         Read More
                       </p>
                     </Link>

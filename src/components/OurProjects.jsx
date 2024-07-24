@@ -4,7 +4,6 @@ import fixedPanels from "@/assets/fixed-panels.jpg";
 import fixedPanelsTwo from "@/assets/fixedPanelsTwo.jpg";
 import fixingPanelsTwo from "@/assets/workersTurbins.jpg";
 import fixingPanelsThree from "@/assets/fixingPanelsThree.jpg";
-import chimneies from "@/assets/chimnies.jpg";
 import chimneiesSmall from "@/assets/chimniesSmall.jpg";
 import tubins from "@/assets/icey-desert-turbins.jpg";
 
