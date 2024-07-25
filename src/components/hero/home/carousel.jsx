@@ -3,6 +3,7 @@ import * as React from "react";
 import Link from "next/link";
 import imgOne from "@/assets/wind-banner.png";
 import imgTwo from "@/assets/RENEWABLE-ENERGY.webp";
+import imgThree from '@/assets/carousel-3.jpg'
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -11,6 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Bubles from "./Bubles";
 
 export default function HeroCarousel() {
   const plugin = React.useRef(
@@ -50,9 +52,10 @@ export default function HeroCarousel() {
                   </div>
                 </div>
               </div>
+              {/* <Bubles /> */}
             </div>
           </CarouselItem>
-          <CarouselItem>
+          {/* <CarouselItem>
             <div
               className="relative p-1 h-[500px] md:h-[95vh] bg-cover bg-center"
               style={{ backgroundImage: `url(${imgTwo.src})` }}
@@ -81,7 +84,7 @@ export default function HeroCarousel() {
           <CarouselItem>
             <div
               className="relative p-1 h-[500px] md:h-[95vh] bg-cover bg-center"
-              style={{ backgroundImage: `url(${imgTwo.src})` }}
+              style={{ backgroundImage: `url(${imgThree.src})` }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center">
                 <div className="text-white p-4 md:pl-52 md:pt-40">
@@ -104,7 +107,7 @@ export default function HeroCarousel() {
                 </div>
               </div>
             </div>
-          </CarouselItem>
+          </CarouselItem> */}
         </CarouselContent>
         {/* <CarouselPrevious /> */}
         {/* <CarouselNext /> */}

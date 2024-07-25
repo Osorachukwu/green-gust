@@ -69,7 +69,7 @@ export default function Testimonial() {
             <div className="text-center custome-shadow py-6 px-20 mt-8 rounded-md">
               <p className="text-slate-400 mb-5">Introducing our smart intergrated system that uses inteligence to secure <br /> efficiency, turning insights into savings. Equipped with state-of-the-art <br /> technology and software, oue digital systems have been proven to significantly <br /> boost flexibility and cost saving while minimising downtime error.</p>
               <p className="italic text-slate-400">
-                <span className="font-semibold not-italic text-black">Angee Enoch</span> <br /> Lawyer
+                <span className="font-semibold not-italic text-black">Todd Penner</span> <br /> Engineer
               </p>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function Testimonial() {
             <div className="text-center custome-shadow py-6 px-20 mt-8 rounded-md">
               <p className="text-slate-400 mb-5">Switching to clean energy is the first step towards energy independence. <br />Moving forward, owners must have proficient control over their energy <br /> consumption, maintaining a balance between low energy use, low cost and <br />high productivity</p>
               <p className="italic text-slate-400">
-                <span className="font-semibold not-italic text-black">Angee Enoch</span> <br /> Lawyer
+                <span className="font-semibold not-italic text-black">Jacob Roberts</span> <br /> Freelancer
               </p>
             </div>
           </div>

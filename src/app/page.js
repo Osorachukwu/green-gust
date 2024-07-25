@@ -1,5 +1,6 @@
 import AboutUs from "@/components/AboutUs";
 import BackToTop from "@/components/BackToTop";
+import Bubles from "@/components/hero/home/Bubles";
 import HeroCarousel from "@/components/hero/home/carousel";
 import HeroDetails from "@/components/hero/home/HeroDetails";
 import Hero from "@/components/hero/others/Hero";
@@ -12,7 +13,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section className="">
-      {/* <Hero /> */}
       <HeroCarousel />
       <HeroDetails />
       <AboutUs />
@@ -21,6 +21,7 @@ export default function Home() {
       <OurTeam />
       <BackToTop />
       <Testimonial />
+      <Bubles />
     </section>
   );
 }

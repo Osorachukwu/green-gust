@@ -43,7 +43,7 @@ export default function Footer() {
     iceyTurbin,
   ];
   return (
-    <div className="bg-slate-900 text-white mt-20">
+    <div className="bg-[#1A2A36] text-white mt-20">
       <div className="grid grid-cols-1 gap-10 md:grid-cols-4 container px-4 mx-auto font-medium pt-20 pb-6 ">
         {/* Address */}
         <div>
@@ -54,21 +54,19 @@ export default function Footer() {
                 <MapPin size={20} />
               </div>
               <span>
-                Berlin, Germany (HQ) Address: No. Brandenburgische Str. 75,
-                12713 Berlin, Germany
+                Berlin, Germany (HQ) Address: No. Brandenburgische Str. 77,
+                12713 Berlin, Germany.
               </span>
             </div>
             <div className="flex gap-2">
               <Mail size={20} /> <span> info@company.com</span>
             </div>
-            <p className="text-xl font-semibold mb-4 text-white">
-              Address
-            </p>
+            <p className="text-xl font-semibold mb-4 text-white">Address</p>
             <div className="flex gap-2">
               <div>
                 <MapPin size={20} />
               </div>
-              <span>ADDRESS: Agerakvo 37, 860 Copenhagen, Denmark</span>
+              <span>Agerakvo 37, 860 Copenhagen, Denmark</span>
             </div>
             <div className="flex gap-2">
               <Phone size={20} /> <span> +4592457638 </span>
@@ -116,6 +114,21 @@ export default function Footer() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Newsletter */}
+        <div>
+          <p className="text-xl font-semibold mb-4">Project Gallery</p>
+
+          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          <form action="">
+            <div className="bg-white h-14 flex items-center p-1 rounded-lg mt-4">
+              <input type="text" placeholder="Your Email" className="h-full flex-grow pl-2 border-none outline-none" />
+              <Link href="" className="ml-2 bg-green-500 px-1 rounded-lg h-full flex justify-center items-center">
+                Sign Up
+              </Link>
+            </div>
+          </form>
         </div>
       </div>
 

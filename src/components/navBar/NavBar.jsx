@@ -23,7 +23,7 @@ export default function NavBar() {
           <div className="flex gap-10 py-2">
             <div className="flex gap-2 items-center">
               <MapPin size={18} stroke="rgb(34 197 94)"  />
-              <p>ADDRESS: Agerakvo 37, 860 Copenhagen, Denmark</p>
+              <p>ADDRESS: Agerakvo 38, 860 Copenhagen, Denmark</p>
             </div>
             <div className="flex gap-2 items-center">
               <Clock size={18} stroke="rgb(34 197 94)"  />

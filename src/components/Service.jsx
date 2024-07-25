@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import fixedPanels from "@/assets/fixed-panels.jpg";
@@ -9,8 +10,12 @@ import chimneies from "@/assets/chimnies.jpg";
 import chimneiesSmall from "@/assets/chimniesSmall.jpg";
 import iceyTurbin from "@/assets/icey-desert-turbins.jpg";
 import bulb from "@/assets/bulb-flat-white.png";
+import bulbGreen from "@/assets/green-bulb.png";
 import flowingWind from "@/assets/white-flowing-wind-icon.png";
+import flowingWindGreen from "@/assets/green-flowing-wind.png";
 import panelIcon from "@/assets/white-panel-icon.png";
+import panelIconGreen from "@/assets/green-panel-icon.png";
+
 import {
   ArrowRight,
   DraftingCompass,
@@ -20,10 +25,21 @@ import {
 } from "lucide-react";
 
 export default function Service() {
+  const [hovered, setHovered] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHovered(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(null);
+  };
+
   let serviceItems = [
     {
       image: fixedPanels,
       icon: bulb,
+      altIcon: bulbGreen,
       title: "Solar panels",
       desc: "We offer everything from specific services on an individual technician level, to complete service teams with project management and full-scope solutions.",
       linkUrl: "",
@@ -31,6 +47,7 @@ export default function Service() {
     {
       image: iceyTurbin,
       icon: flowingWind,
+      altIcon: flowingWindGreen,
       title: "Wind Turbines",
       desc: "Our wide-ranging expertise covers all major wind turbine models and includes both retrofit work as well as scheduled service and maintenance.",
       linkUrl: "",
@@ -38,6 +55,7 @@ export default function Service() {
     {
       image: fixedPanelsTwo,
       icon: panelIcon,
+      altIcon: panelIconGreen,
       title: "Hydropower Plants",
       desc: "We are able to deploy an expert close visual inspection of the blade to correctly classify levels of damage, using rope access techniques as the quickest method to save on lost production.",
       linkUrl: "",
@@ -45,6 +63,7 @@ export default function Service() {
     {
       image: fixingPanelsTwo,
       icon: flowingWind,
+      altIcon: flowingWindGreen,
       title: "Solar panels",
       desc: "The costs for renewable technologies will continue to fall significantly year on year, says the International Renewable Energy Agency (IRENA) in its latest report. .",
       linkUrl: "",
@@ -52,6 +71,7 @@ export default function Service() {
     {
       image: fixingPanelsThree,
       icon: bulb,
+      altIcon: bulbGreen,
       title: "Wind Turbines",
       desc: "In the last decade, the cost of large scale solar system projects has fallen as much as 85%, and cost of solar PV electricity has fallen 7% year-on-year.",
       linkUrl: "",
@@ -59,6 +79,7 @@ export default function Service() {
     {
       image: chimneiesSmall,
       icon: panelIcon,
+      altIcon: panelIconGreen,
       title: "Hydropower Plants",
       desc: "Cost of large scale solar system projects has fallen cheaper.",
       linkUrl: "",
@@ -93,7 +114,12 @@ export default function Service() {
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 md:gap-20 w-full">
           {serviceItems.map((item, i) => (
-            <div key={i} className="rounded-lg overflow-hidden shadow-lg">
+            <div
+              key={i}
+              className="rounded-lg overflow-hidden shadow-lg"
+              onMouseEnter={() => handleMouseEnter(i)}
+              onMouseLeave={handleMouseLeave}
+            >
               <div className="mb-10 relative">
                 <Image
                   src={item.image}
@@ -102,13 +128,17 @@ export default function Service() {
                 />
 
                 {/* Circle's */}
-                <div className="h-16 w-16 bg-green-400 rounded-full flex justify-center items-center z-50 absolute -bottom-6 left-5">
+                <div
+                  className={`h-16 w-16 transition-colors duration-300 ${
+                    hovered === i ? "bg-white" : "bg-green-400"
+                  } rounded-full flex justify-center items-center z-50 absolute -bottom-6 left-5`}
+                >
                   <Image
-                    src={item.icon}
-                    alt="idea-bulb"
+                    src={hovered === i ? item.altIcon : item.icon}
+                    alt="icon"
                     height={40}
                     width={40}
-                    className="z-20"
+                    className="z-20 transition-transform duration-300"
                   />
                 </div>
               </div>
