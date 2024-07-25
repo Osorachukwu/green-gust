@@ -123,8 +123,8 @@ export default function Footer() {
           <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
           <form action="">
             <div className="bg-white h-14 flex items-center p-1 rounded-lg mt-4">
-              <input type="text" placeholder="Your Email" className="h-full flex-grow pl-2 border-none outline-none" />
-              <Link href="" className="ml-2 bg-green-500 px-1 rounded-lg h-full flex justify-center items-center">
+              <input type="text" placeholder="Your Email" className="h-full flex-grow pl-2 border-none outline-none bg-white" />
+              <Link href="" className="ml-2 bg-green-500 px-1 rounded-lg h-full flex justify-center items-center whitespace-nowrap">
                 Sign Up
               </Link>
             </div>
