@@ -87,18 +87,18 @@ export default function Service() {
   ];
 
   let whyChooseUs = [
-    { image: <Check stroke="white" />, title: "Quality", desc: "Services" },
+    { image: <Check stroke="white" size={18} />, title: "Quality", desc: "Services" },
     {
-      image: <UserRoundCheck stroke="white" />,
+      image: <UserRoundCheck stroke="white"  size={18} />,
       title: "Quality",
       desc: "Services",
     },
     {
-      image: <DraftingCompass stroke="white" />,
+      image: <DraftingCompass stroke="white"  size={18} />,
       title: "Quality",
       desc: "Services",
     },
-    { image: <Headset stroke="white" />, title: "Quality", desc: "Services" },
+    { image: <Headset stroke="white"  size={18} />, title: "Quality", desc: "Services" },
   ];
 
   return (
@@ -112,7 +112,7 @@ export default function Service() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 md:gap-20 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 md:gap-20 lg:gap-10 xl:gap-20 w-full">
           {serviceItems.map((item, i) => (
             <div
               key={i}
@@ -160,7 +160,7 @@ export default function Service() {
 
       {/* Why Choose Us */}
       <div className="flex flex-col md:flex-row mx-auto px-4">
-        <div className="text-start lg:text-lg md:w-[50%] md:px-16 bg-slate-100 p-3 md:py-10">
+        <div className="text-start lg:text-lg md:w-[50%] py-10 px-3 md:py-10 md:px-16 bg-slate-100">
           <p className="text-green-500 font-semibold">Why Choose Us</p>
           <p className="text-xl py-2 font-bold lg:text-3xl">
             Complete Commercial <br /> & Residential Solar Systems
@@ -174,7 +174,7 @@ export default function Service() {
           <div className="grid gap-5 grid-cols-2">
             {whyChooseUs.map((item, i) => (
               <div key={i} className="flex items-center gap-2 md:gap-5">
-                <div className="bg-green-500 border-2 h-10 w-10 rounded-full flex justify-center items-center">
+                <div className="bg-green-500 border-2 h-8 min-w-8 rounded-full flex justify-center items-center">
                   {item.image}
                 </div>
                 <div>

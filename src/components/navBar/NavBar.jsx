@@ -55,12 +55,12 @@ export default function NavBar() {
           </div>
         </div>
       </div>
-      {/* And co... */}
+      {/* And co... 💥*/}
       <div className="relative w-full flex gap-16 justify-between items-center h-20 bg-white shadow-2xl z-50">
-        <div className="h-full px-5 md:px-10 flex items-center">
+        <div className="h-full pl-5 flex items-center">
           <Link
             href="/"
-            className=" text-lg md:text-3xl font-semibold flex items-center gap-4 whitespace-nowrap"
+            className=" text-lg md:text-2xl xl:text-4xl font-semibold flex items-center gap-4 whitespace-nowrap"
           >
             <Image
               src={logo}

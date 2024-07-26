@@ -44,9 +44,9 @@ export default function Footer() {
   ];
   return (
     <div className="bg-[#1A2A36] text-white mt-20">
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-4 container px-4 mx-auto font-medium pt-20 pb-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 px-4 lg:px-32 mx-auto font-medium pt-20 pb-6 ">
         {/* Address */}
-        <div>
+        <div className="">
           <p className="text-xl font-semibold mb-4">Address Green Gust</p>
           <div className="space-y-2 pl-2 mb-4 text-slate-500">
             <div className="flex gap-2">
@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="">
           <p className="text-xl font-semibold mb-4">Quick Links</p>
           <div className="space-y-2 pl-2 text-slate-500">
             {quickLinks.map((item, i) => (
@@ -104,7 +104,7 @@ export default function Footer() {
         </div>
 
         {/* Project Gallery */}
-        <div>
+        <div className="">
           <p className="text-xl font-semibold mb-4">Project Gallery</p>
 
           <div className="grid grid-cols-3 gap-3">
@@ -118,24 +118,21 @@ export default function Footer() {
 
         {/* Newsletter */}
         <div>
-          <p className="text-xl font-semibold mb-4">Project Gallery</p>
-
+          <p className="text-xl font-semibold mb-2">Newsletter</p>
           <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-          <form action="">
-            <div className="bg-white h-14 flex items-center p-1 rounded-lg mt-4">
-              <input type="text" placeholder="Your Email" className="h-full flex-grow pl-2 border-none outline-none bg-white" />
-              <Link href="" className="ml-2 bg-green-500 px-1 rounded-lg h-full flex justify-center items-center whitespace-nowrap">
-                Sign Up
-              </Link>
-            </div>
-          </form>
+
+          <div className="h-12 flex justify-between bg-white p-1 rounded-md">
+            <input type="text" placeholder="Your email" className="h-full outline-none pl-2"/>
+            <Link href=""> <div className="bg-green-500 rounded-md h-full px-1 flex justify-center items-center"><p >SignUp</p></div> </Link>
+          </div>
+           
         </div>
       </div>
 
       {/* Floor */}
       <div className="mt-10 px-4 md:px-10 text-slate-500">
         <hr />
-        <p className="font-medium py-5 md:py-8 md:text-xl">
+        <p className="text-sm md:text-base font-medium py-5 md:py-8">
           &#169; Green-Gust Energy, ALL RIGHTS RESERVED.
         </p>
       </div>

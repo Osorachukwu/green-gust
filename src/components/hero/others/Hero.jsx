@@ -7,9 +7,9 @@ import heroBanner from "@/assets/carousel-1.jpg";
 export default function Hero({ title, currentPage }) {
   return (
     <div className={`${styles.parent} h-[50vh] relative mb-20`}>
-      <div className="text-white absolute top-32 left-40 space-y-6">
+      <div className="text-white absolute top-32 left-10 md:left-40 space-y-1 md:space-y-6">
         <p className="text-5xl font-bold">{title}</p>
-        <p className="text-lg">Home / Pages / {currentPage}</p>
+        <p className="md:text-lg">Home / Pages / {currentPage}</p>
       </div>
     </div>
   );

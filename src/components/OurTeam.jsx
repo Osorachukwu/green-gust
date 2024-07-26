@@ -48,7 +48,7 @@ export default function OurTeam() {
         <p className="text-xl py-2 font-bold lg:text-3xl">Experienced Team Members</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
         {teamMembers.map((item, i) => (
           <div key={i} className="flex justify-center gap-3 bg-white shadow-xl">
             <div>
@@ -67,7 +67,7 @@ export default function OurTeam() {
             {/* Socials */}
             <div className="flex flex-col gap-3 justify-center">
               {item.socials.map((social, j) => (
-                <Link key={j} href={social.linkUrl} className="border-2 border-green-500 p-3 rounded-full text-white">
+                <Link key={j} href={social.linkUrl} className="border-2 border-green-500 mr-3 p-1 md:p-2 rounded-full text-white">
                   <div key={j} >
                     {social.icon}
                   </div>

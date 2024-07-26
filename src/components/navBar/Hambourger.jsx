@@ -23,7 +23,7 @@ export default function Hambourger() {
   }, [toggle]);
 
   return (
-    <div className="px-5 md:hidden" onClick={handleToggle}>
+    <div className="px-5 lg:hidden" onClick={handleToggle}>
       <div>{toggle ? <X /> : <Menu />}</div>
       {toggle ? (
         <div

@@ -51,7 +51,7 @@ export default function HeroDetails() {
   ];
 
   return (
-    <div className="container px-4 py-20 mx-auto grid grid-cols-1 md:grid-cols-4 justify-between gap-5 md:gap:-16 xl:gap-36">
+    <div className="container px-4 py-20 mx-auto grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 justify-between gap-5 md:gap:-16 xl:gap-36">
       {heroDetails.map((item, i) => (
         <div
           key={i}

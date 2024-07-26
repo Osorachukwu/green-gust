@@ -3,7 +3,7 @@ import * as React from "react";
 import Link from "next/link";
 import imgOne from "@/assets/wind-banner.png";
 import imgTwo from "@/assets/RENEWABLE-ENERGY.webp";
-import imgThree from '@/assets/carousel-3.jpg'
+import imgThree from "@/assets/carousel-3.jpg";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -33,8 +33,8 @@ export default function HeroCarousel() {
               style={{ backgroundImage: `url(${imgOne.src})` }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center">
-                <div className="text-white p-4 md:pl-52 md:pt-40">
-                  <h1 className="text-2xl md:text-7xl font-extrabold">
+                <div className="text-white p-4 lg:pl-32 md:pt-40">
+                  <h1 className="text-2xl md:text-5xl lg:text-7xl font-extrabold">
                     Pioneers of solar And <br /> renewable energy
                   </h1>
                   <p className="mt-2 text-sm md:text-lg md:mt-5">
@@ -52,17 +52,16 @@ export default function HeroCarousel() {
                   </div>
                 </div>
               </div>
-              {/* <Bubles /> */}
             </div>
           </CarouselItem>
-          {/* <CarouselItem>
+          <CarouselItem>
             <div
               className="relative p-1 h-[500px] md:h-[95vh] bg-cover bg-center"
               style={{ backgroundImage: `url(${imgTwo.src})` }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center">
-                <div className="text-white p-4 md:pl-52 md:pt-40">
-                  <h1 className="text-2xl md:text-7xl font-extrabold">
+                <div className="text-white p-4 lg:pl-32 md:pt-40">
+                  <h1 className="text-2xl md:text-5xl font-extrabold">
                     Hydro power potential <br /> export preparation
                   </h1>
                   <p className="mt-2 text-sm md:text-lg md:mt-5">
@@ -87,8 +86,8 @@ export default function HeroCarousel() {
               style={{ backgroundImage: `url(${imgThree.src})` }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center">
-                <div className="text-white p-4 md:pl-52 md:pt-40">
-                  <h1 className="text-2xl md:text-7xl font-extrabold">
+                <div className="text-white p-4 lg:pl-32 md:pt-40">
+                  <h1 className="text-2xl md:text-5xl font-extrabold">
                     Generating electricity <br /> from Wind farms is more <br />{" "}
                     efficient at sea
                   </h1>
@@ -107,7 +106,7 @@ export default function HeroCarousel() {
                 </div>
               </div>
             </div>
-          </CarouselItem> */}
+          </CarouselItem>
         </CarouselContent>
         {/* <CarouselPrevious /> */}
         {/* <CarouselNext /> */}
