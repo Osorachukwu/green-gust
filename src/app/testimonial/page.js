@@ -5,7 +5,7 @@ import React from 'react'
 export default function TestimonialPage() {
   return (
     <div>
-        <Hero />
+        <Hero title="Testimonial" currentPage="Testimonial" />
         <Testimonial />
 
     </div>

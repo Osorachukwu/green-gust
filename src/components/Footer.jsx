@@ -47,7 +47,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 px-4 lg:px-32 mx-auto font-medium pt-20 pb-6 ">
         {/* Address */}
         <div className="">
-          <p className="text-xl font-semibold mb-4">Address Green Gust</p>
+          <p className="text-xl font-semibold mb-4">Address Green-Gust Energy</p>
           <div className="space-y-2 pl-2 mb-4 text-slate-500">
             <div className="flex gap-2">
               <div>
@@ -59,20 +59,20 @@ export default function Footer() {
               </span>
             </div>
             <div className="flex gap-2">
-              <Mail size={20} /> <span> info@company.com</span>
+              <Mail size={20} /> <span> contact@greengust.com</span>
             </div>
             <p className="text-xl font-semibold mb-4 text-white">Address</p>
             <div className="flex gap-2">
               <div>
                 <MapPin size={20} />
               </div>
-              <span>Agerakvo 37, 860 Copenhagen, Denmark</span>
+              <span>Agerakvo 38, 860 Copenhagen, Denmark</span>
             </div>
             <div className="flex gap-2">
               <Phone size={20} /> <span> +4592457638 </span>
             </div>
             <div className="flex gap-2">
-              <Mail size={20} /> <span> info@company.com</span>
+              <Mail size={20} /> <span> contact@greengust.com</span>
             </div>
           </div>
 
@@ -122,7 +122,7 @@ export default function Footer() {
           <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
 
           <div className="h-12 flex justify-between bg-white p-1 rounded-md">
-            <input type="text" placeholder="Your email" className="h-full outline-none pl-2"/>
+            <input type="text" placeholder="Your email" className="h-full outline-green-500 pl-2 bg-white"/>
             <Link href=""> <div className="bg-green-500 rounded-md h-full px-1 flex justify-center items-center"><p >SignUp</p></div> </Link>
           </div>
            

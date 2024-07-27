@@ -44,13 +44,13 @@ export default function NavLinks() {
                 <Link href="/features" className="py-1 px-3 hover:font-bold">
                   Feature
                 </Link>
-                <Link href="/quote" className="py-1 px-3">
+                <Link href="/quote" className="py-1 px-3 hover:font-semibold">
                   Free Quote
                 </Link>
-                <Link href="/quote" className="py-1 px-3">
+                <Link href="/quote" className="py-1 px-3 hover:font-semibold">
                   Our Team
                 </Link>
-                <Link href="/testimonial" className="py-1 px-3">
+                <Link href="/testimonial" className="py-1 px-3 hover:font-semibold">
                   Testimonial
                 </Link>
               </div>

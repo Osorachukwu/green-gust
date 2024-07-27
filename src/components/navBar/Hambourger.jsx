@@ -35,8 +35,7 @@ export default function Hambourger() {
           <Link href="/service">Service</Link>
           <Link href="/project">Project</Link>
           <Link href="/contact">Contact</Link>
-          {/* <Link href="">Contact</Link> */}
-          {/* <Link href="">Smh</Link> */}
+         
         </div>
       ) : null}
     </div>

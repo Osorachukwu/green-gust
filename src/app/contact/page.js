@@ -14,22 +14,26 @@ import Hero from "@/components/hero/others/Hero";
 export default function ContactPage() {
   return (
     <div>
-        <Hero title="Contact" currentPage="Current" />
+      <Hero title="Contact" currentPage="Current" />
       <div className="container px-4 mx-auto">
-        <p className="text-xl font-semibold mb-4">Address Green Gust</p>
+        <p className="text-xl font-semibold mb-4">Address Green-Gust Energy</p>
         <div className="space-y-2 pl-2 mb-4 text-slate-500">
           <div className="flex gap-2">
-            <MapPin size={20} />{" "}
-            <span> 1234 Main Street, Anytown, CA 12345</span>
+            <MapPin size={20} />
+            <span> Agravaco 38, 860 Copenhagen, Denmark</span>
           </div>
           <div className="flex gap-2">
-            <Phone size={20} /> <span> 123-456- 7890</span>
+            <MapPin size={20} />
+            <span>
+              Berlin, Germany (HQ) Address: No. Brandenburgische Str. 77, 12713
+              Berlin, Germany.
+            </span>
           </div>
           <div className="flex gap-2">
-            <Mail size={20} /> <span> info@company.com</span>
+            <Phone size={20} /> <span> +4592457638</span>
           </div>
           <div className="flex gap-2">
-            <Mail size={20} /> <span> info@company.com</span>
+            <Mail size={20} /> <span> contact@greengust.com</span>
           </div>
         </div>
       </div>
