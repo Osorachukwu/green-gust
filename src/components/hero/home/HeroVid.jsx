@@ -15,3 +15,13 @@ export default function HeroVid() {
     </div>
   );
 }
+
+      // <video
+      //   className="w-full object-cover"
+      //   autoPlay
+      //   loop
+      //   muted
+      //   // controls
+      // >
+      //   <source src="/AdobeStock_186533213.mov" type="video/mp4"/>
+      // </video>
