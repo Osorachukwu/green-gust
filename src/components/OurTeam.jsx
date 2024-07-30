@@ -67,7 +67,7 @@ export default function OurTeam() {
             {/* Socials */}
             <div className="flex flex-col gap-3 justify-center">
               {item.socials.map((social, j) => (
-                <Link key={j} href={social.linkUrl} className="border-2 border-green-500 mr-3 p-1 md:p-2 rounded-full text-white">
+                <Link key={j} href={social.linkUrl} className="border-2 border-green-500 mr-3 p-1 md:p-2 rounded-full text-white hover:opacity-25">
                   <div key={j} >
                     {social.icon}
                   </div>
