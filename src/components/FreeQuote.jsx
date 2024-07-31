@@ -6,7 +6,7 @@ import quotePhoto from "@/assets/quote.jpg";
 export default function FreeQuote() {
   return (
     <div className="px-4 mx-auto flex flex-col md:flex-row mb-6">
-      <div className="lg:w-[50%] bg-green-500 mb-4 md:w-[50%]">
+      <div className="h-full lg:w-[50%] md:w-[50%]">
         <Image src={quotePhoto} alt="panels" className="w-full h-full" />
       </div>
 

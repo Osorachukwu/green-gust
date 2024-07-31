@@ -8,7 +8,7 @@ export default function ProjectPage() {
     <div>
       <Hero title="Projects" currentPage="Project" />
         <OurProjects />
-        <FreeQuote />
+        {/* <FreeQuote /> */}
     </div>
   )
 }

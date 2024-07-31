@@ -1,3 +1,4 @@
+import './globals.css';
 import AboutUs from "@/components/AboutUs";
 import BackToTop from "@/components/BackToTop";
 import Bubles from "@/components/hero/home/Bubles";

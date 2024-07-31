@@ -66,6 +66,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  video::-webkit-media-controls {
+    display: none;
+  }
 }
 
 .custome-shadow {

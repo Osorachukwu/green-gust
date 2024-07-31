@@ -18,9 +18,9 @@ export default function NavBar() {
   return (
     <section>
       {/* Opening time and co */}
-      <div className="hidden lg:block">
-        <div className="bg-slate-900 text-green-100 flex justify-between px-5 text-sm">
-          <div className="flex gap-10 py-2">
+      <div className="l">
+        <div className="bg-slate-900 text-green-100 flex flex-col md:flex-row justify-between px-5  text-[10px] md:text-sm">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-10 py-2">
             <div className="flex gap-2 items-center">
               <MapPin size={18} stroke="rgb(34 197 94)"  />
               <p>ADDRESS: Agerakvo 38, 860 Copenhagen, Denmark</p>
@@ -31,7 +31,7 @@ export default function NavBar() {
             </div>
           </div>
           {/* Col -2 */}
-          <div className="flex gap-10">
+          <div className="flex flex-col md:flex-row md:gap-10">
             <div className="flex gap-2 items-center py-2">
               <Phone size={18} stroke="rgb(34 197 94)" />
               <p>+4592457638</p>

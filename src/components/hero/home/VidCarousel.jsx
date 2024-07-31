@@ -25,6 +25,7 @@ export default function VidCarousel() {
                 autoPlay
                 loop
                 muted
+                controlsList="nodownload"
               >
                 <source src="/AdobeStock_186533213.mov" type="video/mp4" />
               </video>
