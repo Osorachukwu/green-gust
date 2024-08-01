@@ -4,6 +4,7 @@ import Image from "next/image";
 import NavLinks from "./NavLinks";
 import logo from "@/assets/GRREN-GUST-LOGO.svg";
 import Hambourger from "./Hambourger";
+import xtwitter from '@/assets/xtwitter-green.svg'
 import {
   MapPin,
   Clock,
@@ -13,44 +14,42 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import AutoScrollCarousel from "../hero/home/AutoScrollCarousel";
 
 export default function NavBar() {
   return (
     <section>
+      <AutoScrollCarousel />
       {/* Opening time and co */}
-      <div className="l">
-        <div className="bg-slate-900 text-green-100 flex flex-col md:flex-row justify-between px-5  text-[10px] md:text-sm">
-          <div className="flex flex-col md:flex-row gap-2 md:gap-10 py-2">
+      <div className="hidden md:block">
+        <div className="bg-slate-900 text-green-100 flex flex-row justify-between px-5 text-[10px] md:text-sm">
+          <div className="flex flex-row gap-2 md:gap-10 py-2">
             <div className="flex gap-2 items-center">
-              <MapPin size={18} stroke="rgb(34 197 94)"  />
+              <MapPin size={18} stroke="rgb(34 197 94)" />
               <p>ADDRESS: Agerakvo 38, 860 Copenhagen, Denmark</p>
             </div>
             <div className="flex gap-2 items-center">
-              <Clock size={18} stroke="rgb(34 197 94)"  />
+              <Clock size={18} stroke="rgb(34 197 94)" />
               <p>MON - Fri 9.00AM - 9.00PM</p>
             </div>
           </div>
-          {/* Col -2 */}
-          <div className="flex flex-col md:flex-row md:gap-10">
-            <div className="flex gap-2 items-center py-2">
-              <Phone size={18} stroke="rgb(34 197 94)" />
-              <p>+4592457638</p>
-            </div>
+          {/* 💥Col -2 */}
+          <div className="flex items-center gap-10">
+            <a href="tel:4592457638">
+              <div className="flex gap-2 items-center">
+                <Phone size={18} stroke="rgb(34 197 94)" />
+                <p>+4592457638</p>
+              </div>
+            </a>
 
-            <div className="flex divide-x-[1px]">
-              {/* <Link href="" className="px-2 py-2">
-                <Facebook size={18} className="text-purple-300" />
-              </Link> */}
-              <Link href="" className="px-2 py-2">
-                <Twitter size={18} stroke="rgb(34 197 94)"  />
+            {/* Socials */}
+            <div className="">
+              <Link
+                href="https://twitter.com/energygust?s=21&t=dkwdg1Q6zPYDE2VuKxBJPA"
+                className="px-2"
+              >
+               <Image src={xtwitter} alt="twitter icon" width={20}/>
               </Link>
-              {/* <Linkedin className="text-green-500" /> */}
-              {/* <Link href="" className="px-2 py-2">
-                <Linkedin size={18} className="text-purple-300" />
-              </Link> */}
-              {/* <Link href="" className="px-2 py-2">
-                <Instagram size={18} className="text-purple-300" />
-              </Link> */}
             </div>
           </div>
         </div>

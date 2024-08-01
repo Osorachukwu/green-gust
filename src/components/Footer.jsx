@@ -28,7 +28,7 @@ export default function Footer() {
     { title: "Support", linkUrl: "/support" },
   ];
   let socialLinks = [
-    { icon: <Twitter />, linkUrl: "ddd" },
+    { icon: <Twitter />, linkUrl: "https://twitter.com/energygust?s=21&t=dkwdg1Q6zPYDE2VuKxBJPA" },
     // { icon: <Facebook />, linkUrl: "ddd" },
     // { icon: <Youtube />, linkUrl: "ddd" },
     // { icon: <Linkedin />, linkUrl: "ddd" },
@@ -68,9 +68,11 @@ export default function Footer() {
               </div>
               <span>Agerakvo 38, 860 Copenhagen, Denmark</span>
             </div>
-            <div className="flex gap-2">
+           <a href="tel:4592457638">
+           <div className="flex gap-2">
               <Phone size={20} /> <span> +4592457638 </span>
             </div>
+           </a>
             <div className="flex gap-2">
               <Mail size={20} /> <span> contact@greengust.com</span>
             </div>

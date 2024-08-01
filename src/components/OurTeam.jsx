@@ -4,6 +4,7 @@ import Link from "next/link";
 import teamOne from "@/assets/team-1.jpg";
 import teamTwo from "@/assets/team-2.jpg";
 import teamThree from "@/assets/team-3.jpg";
+import xtwitter from "@/assets/xtwitter-white.svg";
 
 import { Facebook, Twitch, Instagram, Twitter } from "lucide-react";
 
@@ -14,7 +15,7 @@ export default function OurTeam() {
       title: "Andy Robben",
       decs: "Designer",
       socials: [
-        { icon: <Twitter fill="rgb(34 197 94)" />, linkUrl: "exampleUrl2" },
+        { icon: xtwitter, linkUrl: "https://twitter.com/energygust?s=21&t=dkwdg1Q6zPYDE2VuKxBJPA" },
         // { icon: Facebook, linkUrl: "exampleUrl1" },
         // { icon: Instagram, linkUrl: "exampleUrl3" },
       ],
@@ -24,7 +25,7 @@ export default function OurTeam() {
       title: "Peter Enonk",
       decs: "Energy",
       socials: [
-        { icon: <Twitter fill="rgb(34 197 94)" />, linkUrl: "exampleUrl2" },
+        { icon: xtwitter, linkUrl: "https://twitter.com/energygust?s=21&t=dkwdg1Q6zPYDE2VuKxBJPA" },
         // { icon: Facebook, linkUrl: "exampleUrl1" },
         // { icon: Instagram, linkUrl: "exampleUrl3" },
       ],
@@ -34,7 +35,7 @@ export default function OurTeam() {
       title: "Attin Willies",
       decs: "Engineer",
       socials: [
-        { icon: <Twitter fill="rgb(34 197 94)" />, linkUrl: "exampleUrl2" },
+        { icon: xtwitter, linkUrl: "https://twitter.com/energygust?s=21&t=dkwdg1Q6zPYDE2VuKxBJPA" },
         // { icon: Facebook, linkUrl: "exampleUrl1" },
         // { icon: Instagram, linkUrl: "exampleUrl3" },
       ],
@@ -44,8 +45,10 @@ export default function OurTeam() {
   return (
     <div className="pb-10">
       <div className="text-center text-lg font-semibold py-10">
-        <p  className="text-green-500 font-semibold">Team Members</p>
-        <p className="text-xl py-2 font-bold lg:text-3xl">Experienced Team Members</p>
+        <p className="text-green-500 font-semibold">Team Members</p>
+        <p className="text-xl py-2 font-bold lg:text-3xl">
+          Experienced Team Members
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
@@ -67,9 +70,14 @@ export default function OurTeam() {
             {/* Socials */}
             <div className="flex flex-col gap-3 justify-center">
               {item.socials.map((social, j) => (
-                <Link key={j} href={social.linkUrl} className="border-2 border-green-500 mr-3 p-1 md:p-2 rounded-full text-white hover:bg-green-500">
-                  <div key={j} className="">
-                    {social.icon}
+                <Link
+                  key={j}
+                  href={social.linkUrl}
+                  className="bg-green-500 mr-3 p-1 md:p-2 rounded-full text-white hover:bg-green-400 flex justify-center items-center"
+                >
+                  {/* {social.icon} */}
+                  <div className="flex justify-center">
+                    <Image src={social.icon} alt={social.linkUrl} width={30} />
                   </div>
                 </Link>
               ))}

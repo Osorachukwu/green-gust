@@ -12,7 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Bubles from "./Bubles";
+// import Bubles from "./Bubles";
 
 export default function HeroCarousel() {
   const plugin = React.useRef(
