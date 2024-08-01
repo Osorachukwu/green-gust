@@ -1,4 +1,3 @@
-'use client'
 import './globals.css';
 import AboutUs from "@/components/AboutUs";
 import BackToTop from "@/components/BackToTop";
@@ -13,19 +12,15 @@ import OurTeam from "@/components/OurTeam";
 import Service from "@/components/Service";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
-import { useState } from 'react';
 
 export default function Home() {
-  const [activeSlide, setActiveSlide] = useState(0);
 
-  const handleBubleClick = (index) => {
-    setActiveSlide(index);
-  };
+ 
   return (
     <section className="">
       {/* <HeroCarousel /> */}
       {/* <HeroVid /> */}
-      <VidCarousel activeSlide={activeSlide}/>
+      <VidCarousel />
       <HeroDetails />
       <AboutUs />
       <Service />
@@ -33,7 +28,7 @@ export default function Home() {
       <OurTeam />
       <BackToTop />
       <Testimonial />
-      <Bubles onBubleClick={handleBubleClick}/>
+      <Bubles />
     </section>
   );
 }
