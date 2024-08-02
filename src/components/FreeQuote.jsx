@@ -2,8 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import quotePhoto from "@/assets/quote.jpg";
+import ContactForm from "./forms/ContactForm";
 
 export default function FreeQuote() {
+
   return (
     <div className="px-4 mx-auto flex flex-col md:flex-row mb-6">
       <div className="h-full lg:w-[50%] md:w-[50%]">
@@ -11,10 +13,8 @@ export default function FreeQuote() {
       </div>
 
       <div className="text-start lg:text-lg md:w-[50%] md:px-16 bg-slate-200 md:py-10">
-      <p className="text-green-500 font-semibold">Free Qoute</p>
-        <p className="text-xl py-2 font-bold lg:text-3xl">
-         Get A Free Qoute
-        </p>
+        <p className="text-green-500 font-semibold">Free Qoute</p>
+        <p className="text-xl py-2 font-bold lg:text-3xl">Get A Free Qoute</p>
         <p className="pt-5 pb-3">
           Green Gust is an integrated energy company delivering total clean
           energy solutions. We have played a pivotal role in the evolution of
@@ -23,45 +23,7 @@ export default function FreeQuote() {
         </p>
 
         {/* Form */}
-        <div>
-          <form className="flex flex-col w-full">
-            <div className="grid grid-cols-2 gap-5 mb-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="rounded-md h-14 outline-green-500 px-4"
-              />
-              <input
-                type="text"
-                placeholder="Your Email"
-                className="rounded-md h-14 outline-green-500 px-4"
-              />
-              <input
-                type="text"
-                placeholder="Your Mobile"
-                className="rounded-md h-14 outline-green-500 px-4"
-              />
-              <input
-                type="text"
-                placeholder="Your Select A Service"
-                className="rounded-md h-14 outline-green-500 px-4"
-              />
-            </div>
-
-            <textarea
-              rows={3}
-              className="rounded-md h-14 outline-green-500 px-4"
-              placeholder="Special Text..."
-            ></textarea>
-            <div className="my-5">
-              <Link href="/about">
-                <p className="bg-green-500 text-white rounded-full inline-block py-4 px-10">
-                  Submit
-                </p>
-              </Link>
-            </div>
-          </form>
-        </div>
+        <ContactForm />
       </div>
     </div>
   );

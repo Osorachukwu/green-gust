@@ -7,6 +7,7 @@ import fixingPanelsTwo from "@/assets/workersTurbins.jpg";
 import fixingPanelsThree from "@/assets/fixingPanelsThree.jpg";
 import chimneiesSmall from "@/assets/chimniesSmall.jpg";
 import tubins from "@/assets/icey-desert-turbins.jpg";
+import xtwitter from "@/assets/xtwitter-gray.svg";
 import {
   MapPin,
   Phone,
@@ -18,6 +19,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import iceyTurbin from "@/assets/icey-desert-turbins.jpg";
+import NewsLetter from "./forms/NewsLetter";
 
 export default function Footer() {
   let quickLinks = [
@@ -28,7 +30,10 @@ export default function Footer() {
     { title: "Support", linkUrl: "/support" },
   ];
   let socialLinks = [
-    { icon: <Twitter />, linkUrl: "https://twitter.com/energygust?s=21&t=dkwdg1Q6zPYDE2VuKxBJPA" },
+    {
+      icon: <Twitter />,
+      linkUrl: "https://twitter.com/energygust?s=21&t=dkwdg1Q6zPYDE2VuKxBJPA",
+    },
     // { icon: <Facebook />, linkUrl: "ddd" },
     // { icon: <Youtube />, linkUrl: "ddd" },
     // { icon: <Linkedin />, linkUrl: "ddd" },
@@ -47,7 +52,9 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 px-4 lg:px-32 mx-auto font-medium pt-20 pb-6 ">
         {/* Address */}
         <div className="">
-          <p className="text-xl font-semibold mb-4">Address Green-Gust Energy</p>
+          <p className="text-xl font-semibold mb-4">
+            Address Green-Gust Energy
+          </p>
           <div className="space-y-2 pl-2 mb-4 text-slate-500">
             <div className="flex gap-2">
               <div>
@@ -68,27 +75,20 @@ export default function Footer() {
               </div>
               <span>Agerakvo 38, 860 Copenhagen, Denmark</span>
             </div>
-           <a href="tel:4592457638">
-           <div className="flex gap-2">
-              <Phone size={20} /> <span> +4592457638 </span>
-            </div>
-           </a>
+            <a href="tel:4592457638">
+              <div className="flex gap-2">
+                <Phone size={20} /> <span> +4592457638 </span>
+              </div>
+            </a>
             <div className="flex gap-2">
               <Mail size={20} /> <span> contact@greengust.com</span>
             </div>
-          </div>
-
-          {/* Social Links */}
-          <div className="flex gap-3">
-            {socialLinks.map((item, i) => (
-              <Link
-                href={item.linkUrl}
-                key={i}
-                className="h-10 w-10 flex justify-center items-center gap-2 rounded-full border-2 border-slate-500 text-slate-500"
-              >
-                {item.icon}
+            {/* Social Link */}
+            <div className="flex justify-center items-center gap-3 border-2 border-slate-500 rounded-full h-7 w-7">
+              <Link href="https://twitter.com/energygust?s=21&t=dkwdg1Q6zPYDE2VuKxBJPA">
+                <Image src={xtwitter} alt="Twitter icon" width={20} />
               </Link>
-            ))}
+            </div>
           </div>
         </div>
 
@@ -123,11 +123,7 @@ export default function Footer() {
           <p className="text-xl font-semibold mb-2">Newsletter</p>
           <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
 
-          <div className="h-12 flex justify-between bg-white p-1 rounded-md">
-            <input type="text" placeholder="Your email" className="h-full outline-green-500 pl-2 bg-white"/>
-            <Link href=""> <div className="bg-green-500 rounded-md h-full px-1 flex justify-center items-center"><p >SignUp</p></div> </Link>
-          </div>
-           
+          <NewsLetter />
         </div>
       </div>
 

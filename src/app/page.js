@@ -11,6 +11,7 @@ import OurProjects from "@/components/OurProjects";
 import OurTeam from "@/components/OurTeam";
 import Service from "@/components/Service";
 import Testimonial from "@/components/Testimonial";
+import TestTest from '@/components/TestTest';
 import Image from "next/image";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
       <OurTeam />
       <BackToTop />
       <Testimonial />
+      {/* <TestTest /> */}
       <Bubles />
     </section>
   );
