@@ -36,13 +36,13 @@ export default function AutoScrollCarousel() {
       >
         <CarouselContent>
           <CarouselItem>
-            <div className="flex justify-center gap-2 items-center text-sm">
+            <div className="flex justify-center gap-2 items-center text-xs ">
               <MapPin size={18} stroke="rgb(34 197 94)" />
               <p>ADDRESS: Agerakvo 38, 860 Copenhagen, Denmark</p>
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="flex justify-center gap-2 items-center text-sm">
+            <div className="flex justify-center gap-2 items-center text-xs ">
               <Clock size={18} stroke="rgb(34 197 94)" />
               <p>MON - Fri 9.00AM - 9.00PM</p>
             </div>
@@ -54,7 +54,7 @@ export default function AutoScrollCarousel() {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="flex justify-center gap-2 items-center text-sm">
+            <div className="flex justify-center gap-2 items-center text-xs ">
               <Link
                 href="https://twitter.com/energygust?s=21&t=dkwdg1Q6zPYDE2VuKxBJPA"
                 className="px-2"

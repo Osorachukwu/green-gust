@@ -27,7 +27,7 @@ export default function Footer() {
     { title: "Contact Us", linkUrl: "/contact" },
     { title: "Our Services", linkUrl: "/service" },
     { title: "Terms & Condition", linkUrl: "/about" },
-    { title: "Support", linkUrl: "/support" },
+    { title: "Free Quote", linkUrl: "/quote" },
   ];
   let socialLinks = [
     {
