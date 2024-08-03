@@ -25,7 +25,7 @@ export default function Footer() {
   let quickLinks = [
     { title: "About Us", linkUrl: "/about" },
     { title: "Contact Us", linkUrl: "/contact" },
-    { title: "Our Services", linkUrl: "/services" },
+    { title: "Our Services", linkUrl: "/service" },
     { title: "Terms & Condition", linkUrl: "/about" },
     { title: "Support", linkUrl: "/support" },
   ];
