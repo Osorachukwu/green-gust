@@ -69,6 +69,9 @@
   video::-webkit-media-controls {
     display: none;
   }
+  video::-webkit-media-controls-enclosure {
+    display: none;
+  }
 }
 
 .custome-shadow {

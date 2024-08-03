@@ -26,6 +26,7 @@ export default function VidCarousel() {
                 loop
                 muted
                 controlsList="nodownload"
+                playsInline
               >
                 <source src="/AdobeStock_186533213.mov" type="video/mp4" />
               </video>
@@ -58,6 +59,8 @@ export default function VidCarousel() {
                 autoPlay
                 loop
                 muted
+                controlsList="nodownload"
+                playsInline
               >
                 <source src="/AdobeStock_611380948.mov" type="video/mp4" />
               </video>
@@ -89,6 +92,8 @@ export default function VidCarousel() {
                 autoPlay
                 loop
                 muted
+                controlsList="nodownload"
+                playsInline
               >
                 <source src="/AdobeStock_644466677.mov" type="video/mp4" />
               </video>
