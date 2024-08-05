@@ -67,10 +67,13 @@
     @apply bg-background text-foreground;
   }
   video::-webkit-media-controls {
-    display: none;
+    display: none !important;
   }
   video::-webkit-media-controls-enclosure {
-    display: none;
+    display: none !important;
+  }
+  video::-webkit-media-controls-panel {
+    display: none !important;
   }
 }
 
