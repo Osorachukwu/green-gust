@@ -33,7 +33,7 @@ export default function ContactPage() {
             <Phone size={20} /> <span> +4592457638</span>
           </div>
           <div className="flex gap-2">
-            <Mail size={20} /> <span> contact@greengust.com</span>
+            <Mail size={20} /> <span> contact@greengust.org</span>
           </div>
         </div>
       </div>

@@ -81,7 +81,7 @@ export default function Footer() {
               </div>
             </a>
             <div className="flex gap-2">
-              <Mail size={20} /> <span> contact@greengust.com</span>
+              <Mail size={20} /> <span> contact@greengust.org</span>
             </div>
             {/* Social Link */}
             <div className="flex justify-center items-center gap-3 border-2 border-slate-500 rounded-full h-7 w-7">
@@ -121,7 +121,7 @@ export default function Footer() {
         {/* Newsletter */}
         <div>
           <p className="text-xl font-semibold mb-2">Newsletter</p>
-          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          <p>Receive Our Latest News and Updates</p>
 
           <NewsLetter />
         </div>
