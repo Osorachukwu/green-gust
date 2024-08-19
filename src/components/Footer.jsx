@@ -66,7 +66,7 @@ export default function Footer() {
               </span>
             </div>
             <div className="flex gap-2">
-              <Mail size={20} /> <span> contact@greengust.com</span>
+              <Mail size={20} /> <span>contact@greengust.org</span>
             </div>
             <p className="text-xl font-semibold mb-4 text-white">Address</p>
             <div className="flex gap-2">
